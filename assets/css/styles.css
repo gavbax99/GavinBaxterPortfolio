@@ -1,7 +1,3 @@
-/* @@@@@@@@@@@@@@@@@@ CSS STARTING TEMPLATE @@@@@@@@@@@@@@@@@@ */
-/* @@@@@@@@@@@@@@@@@@   UPDATED: 4/8/2019   @@@@@@@@@@@@@@@@@@ */
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
 /* ******************   TABLE OF CONTENTS   ****************** */
 /* *********************************************************** *\
 
@@ -65,7 +61,8 @@ a, a:hover, a:focus, a:active, a[href^="tel"] {background-color: transparent; co
 /* *********************************************************** */
 
 /* @font-face {font-family: myFont; src: url("../font/big_noodle_titling.ttf");} */
-/* .mont {font-family: 'Montserrat', sans-serif;} */
+.crete {font-family: 'Crete Round', serif;}
+.open {font-family: 'Open Sans', sans-serif;}
 
 .clearfix::after{content: ""; display: block; clear: both;}
 
@@ -121,6 +118,11 @@ h4{font-size:18px;}
 
 :root {
     --color-example: #ffffff;
+    --color-black: #161b20;
+    --color-purple: #99A3E8;
+    --color-skyblue: #76BDDB;
+    --color-red: #F74356;
+    --color-blue: #64C2EC;
 }
 
 .to-use-variables {
@@ -130,14 +132,255 @@ h4{font-size:18px;}
 /* 1. ***************         SETUP         ****************** */
 /* *********************************************************** */
 
-body {background-color: #fff; font-size: 12px; color: rgb(24, 24, 24); font-family: Arial, Helvetica, sans-serif;}
+body {background-color: #fff; font-size: 12px; color: rgb(24, 24, 24); font-family: 'Open Sans', Arial, sans-serif;}
 
-#wrapper{max-width: 64%; width: 100%; position: relative; margin: 0 auto; overflow: hidden; background-color: #fff;}
+#wrapper {
+    width: 100vw;
+}
 
 /* 2. **************         HEADER         ****************** */
 /* *********************************************************** */
 
-header {width: 100%;}
+.header-class {
+    position: fixed;
+    max-width: 1050px;
+    width: 100%;
+    height: 120px;
+    background: -moz-linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 30%, rgba(255,255,255,0.8) 60%, rgba(255,255,255,0.5) 88%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.9) 30%,rgba(255,255,255,0.8) 60%,rgba(255,255,255,0.5) 88%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.9) 30%,rgba(255,255,255,0.8) 60%,rgba(255,255,255,0.5) 88%,rgba(255,255,255,0) 100%);   
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1000;
+    justify-content: space-between;
+}
+
+.header-logo {
+    padding: 10px 10px 10px 0px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.header-logo img {
+    border-radius: 50%;
+}
+
+.header-list {
+
+}
+
+.header-list li {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .5s;
+    /* background-color: rgba(255,255,255,.5); */
+    text-shadow: 1px 1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px -1px 0 #fff,
+    0px 1px 0 #fff,
+    0px -1px 0 #fff,
+    -1px 0px 0 #fff,
+    1px 0px 0 #fff,
+    2px 2px 0 #fff,
+    -2px 2px 0 #fff,
+    2px -2px 0 #fff,
+    -2px -2px 0 #fff,
+    0px 2px 0 #fff,
+    0px -2px 0 #fff,
+    -2px 0px 0 #fff,
+    2px 0px 0 #fff,
+    1px 2px 0 #fff,
+    -1px 2px 0 #fff,
+    1px -2px 0 #fff,
+    -1px -2px 0 #fff,
+    2px 1px 0 #fff,
+    -2px 1px 0 #fff,
+    2px -1px 0 #fff,
+    -2px -1px 0 #fff;
+}
+
+.header-list li:last-of-type {
+    padding: 10px 0 10px 20px;
+}
+
+.header-list-line, .header-list-line-last {
+    width: 6px; 
+    height: 6px;
+    background-color: var(--color-blue); 
+    position: absolute; 
+    top: 32px; 
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    border-radius: 50%;
+    transition: .5s;
+    z-index: 1001;
+}
+
+.header-list-line-last {
+    left: 66%;
+}
+
+
+/* 3. **************         HERO         ****************** */
+/* ********************************************************* */
+
+.hero-wrapper {
+    height: 200vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 120px;
+}
+
+.hero-top {
+    height: 100vh;
+    max-width: 1050px;
+    width: 100%;
+}
+
+.hero-name {
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    transform: translate(0, -30%);
+}
+
+.hero-hello {
+    align-items: flex-start;
+}
+
+.hero-webdev {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 600;
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+.hero-hey-im {
+    font-size: 20px;
+    padding: 0 0 5px 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.hero-gavin-baxter {
+    line-height: 70px;
+    font-size: 85px;
+    color: var(--color-black);
+}
+
+/* ~~~~~~~~~~~~~~~~~~ BOT ~~~~~~~~~~~~~~~~~~ */
+
+.hero-bot {
+    height: 100vh;
+    max-width: 1050px;
+    width: 100%;
+}
+
+.hero-profile {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.hero-profile-picture {
+    width: 420px;
+    height: 100px;
+}
+
+.hero-profile-picture img {
+    margin-right: 20px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.hero-profile-text {
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    width: calc(100% - 420px);
+    height: 100px;
+}
+
+/* X. **************         PORTFOLIO         ****************** */
+/* ************************************************************** */
+
+.portfolio {
+    width: 100%;
+    height: 500px;
+    background-color: #f5f7f9;
+}
+
+/* X. **************         CIRCLES         ****************** */
+/* ************************************************************** */
+
+
+#top-container {
+    width: 100%;
+    height: 75%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+#mid-container {
+    width: 100%;
+    height: 75%;
+    position: absolute;
+    left: 0;
+    top: 40%;
+    z-index: -1;
+}
+
+#bot-container {
+    width: 100%;
+    height: 75%;
+    position: absolute;
+    left: 0;
+    top: 80%;
+    z-index: -1;
+}
+
+#lower-container {
+    width: 100%;
+    height: 75%;
+    position: absolute;
+    left: 0;
+    top: 120%;
+    z-index: -1;
+}
+
+.circle {
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.circle-small {
+    transition: 1.6s linear;
+    background-color: rgba(247, 67, 86, 0.5);
+}
+
+.circle-mid {
+    transition: 1.8s linear;
+    background-color: rgba(247, 67, 86, 0.52);
+}
+
+.circle-big {
+    transition: 2s linear;
+    background-color: rgba(53, 172, 228, 0.42);
+}
+
+.circle-xl {
+    transition: 2s linear;
+    background-color: rgba(53, 172, 228, 0.48);
+}
 
 /* X. **************         FOOTER         ****************** */
 /* *********************************************************** */
@@ -154,6 +397,24 @@ footer {width: 100%;}
 
 @media (pointer: fine) {
     /* HOVER EFFECTS */
+
+    .header-list li:hover .header-list-line {
+        top: 28px;
+        opacity: 1;
+    }
+
+    .header-list li:hover .header-list-line-last {
+        top: 28px;
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 1290px) { 
+    .header-class {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 120px;
+    }
 }
 
 @media only screen and (max-width: 1220px) { 
