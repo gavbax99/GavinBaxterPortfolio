@@ -1,0 +1,186 @@
+/* @@@@@@@@@@@@@@@@@@ CSS STARTING TEMPLATE @@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@   UPDATED: 4/8/2019   @@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* ******************   TABLE OF CONTENTS   ****************** */
+/* *********************************************************** *\
+
+xi. RESET
+xii. TOOLS
+xiii. VARIABLES
+
+1. SETUP
+2. HEADER
+3. ...
+X. FOOTER
+Y. OVERRIDES
+Z. MEDIA QUERIES
+
+/* xi. **************         RESET         ****************** */
+/* *********************************************************** */
+
+/* v2.0 | 20110126 - MEYER RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, 
+tbody, tfoot, thead, tr, th, td, article, 
+aside, canvas, details, embed, figure, figcaption, 
+footer, header, hgroup, menu, nav, output, ruby, 
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1;
+  margin: 0;
+}
+
+*, :after, :before {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box}
+html {height:100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%}
+body {height: 100%; line-height: 1; margin: 0 !important;}
+ol, ul {list-style: none; margin-block-start: 0; margin-block-end: 0; margin-inline-start: 0px; margin-inline-end: 0px; padding-inline-start: 0;}
+table {border-collapse: collapse; border-spacing: 0;}
+table, tr, td {padding: 0;}
+img {display: block; border: 0; border-style: none;}
+a, a:hover, a:focus, a:active, a[href^="tel"] {background-color: transparent; color: inherit; text-decoration: none; outline: 0;}
+
+/* xii. *************         TOOLS         ****************** */
+/* *********************************************************** */
+
+/* @font-face {font-family: myFont; src: url("../font/big_noodle_titling.ttf");} */
+/* .mont {font-family: 'Montserrat', sans-serif;} */
+
+.clearfix::after{content: ""; display: block; clear: both;}
+
+.flex-full {display: flex; justify-content: center; align-items: center;}
+.flex-row {flex-direction: row;}
+.flex-col {flex-direction: column;}
+
+.dark-txt {color: #000000}
+.dark-bg {background-color: #000000}
+.grey-txt {color: #353435}
+.grey-bg {background-color: #353435}
+.lite-grey-txt {color: #CCCCCC}
+.lite-grey-bg {background-color: #CCCCCC}
+.lite-txt {color: #ffffff}
+.lite-bg {background-color: #ffffff}
+
+.main-rgb-txt {color: #00a1e4}
+.main-rgb-bg {background-color: #00a1e4}
+.dark-rgb-txt {color: #0092d3}
+.dark-rgb-bg {background-color: #0092d3}
+.lite-rgb-txt {color: #0092d3}
+.lite-rgb-bg {background-color: #0092d3}
+
+.font-h {font-family: 'Montserrat', sans-serif;}
+.font-p {font-family: 'Montserrat', sans-serif;}
+
+h1,h2,h3,h4 {font-family: 'Roboto', serif; margin:0; padding:0;}
+
+h1{font-size:26px;}
+h2{font-size:36px;}
+h3{font-size:24px;}
+h4{font-size:18px;}
+
+.fs1{font-size: 12px;}
+.fs2{font-size: 18px;}
+.fs3{font-size: 24px;}
+.fs4{font-size: 32px;}
+.fs5{font-size: 40px;}
+
+.uppercase {text-transform: uppercase}
+.fw-300 {font-weight: 300}
+.fw-400 {font-weight: 400}
+.fw-500 {font-weight: 500}
+.fw-600 {font-weight: 600}
+.fw-700 {font-weight: 700}
+.fw-800 {font-weight: 800}
+.fw-900 {font-weight: 900}
+
+.font-p {letter-spacing: .5px; line-height: 26px; font-size: 16px; font-family: 'Montserrat', sans-serif;}
+
+/* xii. *************         VARS          ****************** */
+/* *********************************************************** */
+
+:root {
+    --color-example: #ffffff;
+}
+
+.to-use-variables {
+    color: var(--color-example);
+}
+
+/* 1. ***************         SETUP         ****************** */
+/* *********************************************************** */
+
+body {background-color: #fff; font-size: 12px; color: rgb(24, 24, 24); font-family: Arial, Helvetica, sans-serif;}
+
+#wrapper{max-width: 64%; width: 100%; position: relative; margin: 0 auto; overflow: hidden; background-color: #fff;}
+
+/* 2. **************         HEADER         ****************** */
+/* *********************************************************** */
+
+header {width: 100%;}
+
+/* X. **************         FOOTER         ****************** */
+/* *********************************************************** */
+
+footer {width: 100%;}
+
+/* Y. ***************       OVERRIDES       ****************** */
+/* *********************************************************** */
+
+.hider {display: none !important;}
+
+/* Z. ***************     MEDIA QUERIES     ****************** */
+/* *********************************************************** */
+
+@media (pointer: fine) {
+    /* HOVER EFFECTS */
+}
+
+@media only screen and (max-width: 1220px) { 
+    /* WRAPPER BREAK (1220) */
+}
+
+@media only screen and (max-width: 1050px) { 
+    /* BIG FIXES */
+}
+
+@media only screen and (max-width: 992px) { 
+    /* M QUERIES (992) */
+}
+
+@media only screen and (max-width: 768px) { 
+    /* S QUERIES (768) */
+}
+
+@media only screen and (max-width: 576px) { 
+    /* XS QUERIES (567) */
+}
+
+@media only screen and (max-width: 360px) { 
+    /* SMALL FIXES */
+}
+
+
+
+
+
