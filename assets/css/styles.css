@@ -152,10 +152,10 @@ body {background-color: #fff; font-size: 12px; color: rgb(24, 24, 24); font-fami
     top: 0;
     left: 0;
     padding: 0 120px;
-    z-index: 1000;
-    transition: all 0.5s cubic-bezier(0, 0, .36, 1); 
-    -webkit-transition: all 0.5s cubic-bezier(0, 0, .36, 1); 
-    -moz-transition: all 0.5s cubic-bezier(0, 0, .36, 1); 
+    z-index: 9998;
+    transition: all 0.7s cubic-bezier(.50, 0, .50, 1); 
+    -webkit-transition: all 0.7s cubic-bezier(.50, 0, .50, 1); 
+    -moz-transition: all 0.7s cubic-bezier(.50, 0, .50, 1); 
 }
 
 .header-inner {
@@ -184,6 +184,7 @@ body {background-color: #fff; font-size: 12px; color: rgb(24, 24, 24); font-fami
     font-size: 14px;
     cursor: pointer;
     transition: .5s;
+    letter-spacing: 1px;
     /* background-color: rgba(255,255,255,.5); */
     text-shadow: 1px 1px 0 #fff,
     -1px 1px 0 #fff,
@@ -226,7 +227,7 @@ body {background-color: #fff; font-size: 12px; color: rgb(24, 24, 24); font-fami
     opacity: 0;
     border-radius: 50%;
     transition: .5s;
-    z-index: 1001;
+    z-index: 9999;
 }
 
 .header-list-line-last {
@@ -297,12 +298,11 @@ body {background-color: #fff; font-size: 12px; color: rgb(24, 24, 24); font-fami
 }
 
 .hero-profile-picture {
-    width: 420px;
-    height: 100px;
+    width: 400px;
+    align-items: flex-start;
 }
 
 .hero-profile-picture img {
-    margin-right: 20px;
     width: 300px;
     border-radius: 50%;
 }
@@ -311,37 +311,197 @@ body {background-color: #fff; font-size: 12px; color: rgb(24, 24, 24); font-fami
     font-size: 20px;
     line-height: 40px;
     letter-spacing: 1px;
-    width: calc(100% - 420px);
-    height: 100px;
+    width: calc(100% - 400px);
 }
 
 /* X. **************         PORTFOLIO         ****************** */
 /* ************************************************************** */
 
-.portfolio {
+.portfolio-wrapper {
     width: 100%;
     background-color: #f5f7f9;
-    padding: 0 120px;
+    padding: 80px 120px 100px;
 }
 
-.portfolio-wrapper {
+.portfolio {
     max-width: 1050px;
     width: 100%;
-    height: 100px;
-    padding: 80px 0 200px 0;
     align-items: flex-start;
 }
 
 .porfolio-tagline {
     font-size: 46px;
+    padding-bottom: 80px;
 }
+
+.porfolio-card-holder {
+    width: 100%;
+    align-items: flex-start;
+}
+
+.portfolio-card {
+    width: 50%;
+    cursor: pointer;
+}
+
+.card-top {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    background: lightcoral;
+    border-radius: 4px 4px 0 0;
+}
+
+.card-top-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.2;
+    border-radius: 4px 4px 0 0;
+    z-index: 1002;
+    transition: .4s;
+}
+
+.card-top img {
+    opacity: 0.8;
+    z-index: 1003;
+    transition: .4s;
+}
+
+.card-bot {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+    padding: 30px 30px;
+    align-items: flex-start;
+}
+
+.card-shadow {
+    box-shadow: 0 0 6px 0 rgba(30,45,62,.09);
+    transition: .4s;
+}
+
+.card-bot-tagline {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(179, 179, 179);
+    letter-spacing: .5px;
+    padding-bottom: 30px;
+}
+
+.card-bot-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--color-black);
+    letter-spacing: .5px;
+    padding-bottom: 12px;
+}
+
+.card-bot-description {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: var(--color-black);
+}
+
+.card-pad-1 {
+    margin: 0 20px 20px 0;
+}
+
+.card-pad-2 {
+    margin: 0 0 20px 20px;
+}
+
+.card-pad-3 {
+    margin: 20px 20px 0 0;
+}
+
+.card-pad-4 {
+    margin: 20px 0 0 20px;
+}
+
+.card-top-image-1, .card-top-image-2, .card-top-image-3, .card-top-image-4 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-top-image-1 {
+    background-image: url("../images/card_egia.jpg");
+}
+
+.card-top-image-2 {
+    background-image: url("../images/card_bb.jpg");
+}
+
+.card-top-image-3 {
+    background-image: url("../images/card_ucd.jpg");
+}
+
+.card-top-image-4 {
+    background-image: url("../images/card_personal.jpg");
+}
+
+
+/* X. **************         MISSION         ****************** */
+/* ************************************************************** */
+
+
+.mission-wrapper {
+    width: 100%;
+    padding: 80px 120px 100px;
+}
+
+.mission {
+    max-width: 1050px;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.mission-tagline {
+    font-size: 46px;
+    padding-bottom: 80px;
+}
+
+.mission-text {
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    padding-bottom: 80px;
+}
+
+.mission-f-wrapper1 {
+    width: 100%;
+}
+
+.mission-f-outer2 {
+    flex: 1;
+}
+
+.mission-f-inner2 {
+    flex: 1;
+}
+
+.mission-f-image {
+    flex: 1;
+    height: 100px;
+}
+
+.mission-image-tag {
+    padding-top: 10px;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
 
 /* X. **************         CIRCLES         ****************** */
 /* ************************************************************** */
 
 
 #top-container {
-    width: 90%;
+    width: 100%;
     height: 75%;
     position: absolute;
     left: 50%;
@@ -351,7 +511,7 @@ body {background-color: #fff; font-size: 12px; color: rgb(24, 24, 24); font-fami
 }
 
 #mid-container {
-    width: 90%;
+    width: 100%;
     height: 75%;
     position: absolute;
     left: 50%;
@@ -361,7 +521,7 @@ body {background-color: #fff; font-size: 12px; color: rgb(24, 24, 24); font-fami
 }
 
 #bot-container {
-    width: 90%;
+    width: 100%;
     height: 75%;
     position: absolute;
     left: 50%;
@@ -371,7 +531,7 @@ body {background-color: #fff; font-size: 12px; color: rgb(24, 24, 24); font-fami
 }
 
 #lower-container {
-    width: 90%;
+    width: 100%;
     height: 75%;
     position: absolute;
     left: 50%;
@@ -433,6 +593,20 @@ footer {width: 100%;}
         top: 28px;
         opacity: 1;
     }
+
+    .portfolio-card:hover .card-shadow {
+        box-shadow: 0 0 12px 0 rgba(30,45,62,.18);
+    }
+
+    .portfolio-card:hover .card-top-overlay {
+        opacity: 0;
+    }
+
+    .portfolio-card:hover .card-top img {
+        opacity: 1;
+    }
+
+
 }
 
 @media only screen and (max-width: 1290px) { 

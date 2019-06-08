@@ -65,8 +65,8 @@ window.onload = function () {
                 }, 1600);
             }, 1600);
 
-        }, 400);
-    }, 2000);
+        }, 600);
+    }, 000);
 
     // DOT INTERVAL - MID SECTION - MED DOTS
     setTimeout(function () {
@@ -101,8 +101,8 @@ window.onload = function () {
                 }, 1800);
             }, 1800);
 
-        }, 700);
-    }, 1000);
+        }, 1000);
+    }, 000);
 
     // DOT INTERVAL - BOT SECTION - BIG DOTS
     setInterval(function () {
@@ -136,7 +136,7 @@ window.onload = function () {
             }, 2000);
         }, 2000);
 
-    }, 900);
+    }, 1200);
 
     // DOT INTERVAL - LOWER SECTION - XL DOTS
     setInterval(function () {
@@ -170,7 +170,7 @@ window.onload = function () {
             }, 2000);
         }, 2000);
 
-    }, 1000);
+    }, 1400);
 
     // Prevent moving on mobile devices
     var fixed = document.getElementById('wrapper');
