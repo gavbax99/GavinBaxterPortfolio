@@ -34,6 +34,8 @@ $(document).ready(function(){
     var previous = $(window).scrollTop();
     var throttled = _.throttle(function(){
 
+        console.log("scroll");
+
         var check = $(".header-class").css("top");
 
         var current = $(this).scrollTop();
@@ -48,7 +50,7 @@ $(document).ready(function(){
             }
         }
         previous = current;
-    }, 700);
+    }, 1000);
 
     $(window).scroll(throttled);
 

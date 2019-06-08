@@ -117,11 +117,11 @@ h4{font-size:18px;}
 /* *********************************************************** */
 
 :root {
+    --color-skyblue: #76BDDB;
     --color-example: #ffffff;
     --color-black: #161b20;
-    --color-purple: #99A3E8;
-    --color-skyblue: #76BDDB;
     --color-red: #F74356;
+    --color-purple: #99A3E8;
     --color-blue: #64C2EC;
 }
 
@@ -146,16 +146,16 @@ body {background-color: #fff; font-size: 12px; color: rgb(24, 24, 24); font-fami
     max-width: 100%;
     width: 100%;
     height: 120px;
-    background: -moz-linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 30%, rgba(255,255,255,0.8) 60%, rgba(255,255,255,0.5) 88%, rgba(255,255,255,0) 100%);
-    background: -webkit-linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.9) 30%,rgba(255,255,255,0.8) 60%,rgba(255,255,255,0.5) 88%,rgba(255,255,255,0) 100%);
-    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.9) 30%,rgba(255,255,255,0.8) 60%,rgba(255,255,255,0.5) 88%,rgba(255,255,255,0) 100%);   
+    background: -moz-linear-gradient(to bottom, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.4) 30%, rgba(255,255,255,0.4) 60%, rgba(255,255,255,0.4) 88%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 30%,rgba(255,255,255,0.4) 60%,rgba(255,255,255,0.4) 88%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 30%,rgba(255,255,255,0.4) 60%,rgba(255,255,255,0.4) 88%,rgba(255,255,255,0) 100%);   
     top: 0;
     left: 0;
     padding: 0 120px;
     z-index: 9998;
-    transition: all 0.7s cubic-bezier(.50, 0, .50, 1); 
-    -webkit-transition: all 0.7s cubic-bezier(.50, 0, .50, 1); 
-    -moz-transition: all 0.7s cubic-bezier(.50, 0, .50, 1); 
+    transition: all 0.5s cubic-bezier(.50, 0, .50, 1); 
+    -webkit-transition: all 0.5s cubic-bezier(.50, 0, .50, 1); 
+    -moz-transition: all 0.5s cubic-bezier(.50, 0, .50, 1); 
 }
 
 .header-inner {
@@ -172,6 +172,7 @@ body {background-color: #fff; font-size: 12px; color: rgb(24, 24, 24); font-fami
 
 .header-logo img {
     border-radius: 50%;
+    box-shadow: 0 0 0 3px #fff;
 }
 
 .header-list {
@@ -320,7 +321,7 @@ body {background-color: #fff; font-size: 12px; color: rgb(24, 24, 24); font-fami
 .portfolio-wrapper {
     width: 100%;
     background-color: #f5f7f9;
-    padding: 80px 120px 100px;
+    padding: 150px 120px 160px;
 }
 
 .portfolio {
@@ -451,7 +452,7 @@ body {background-color: #fff; font-size: 12px; color: rgb(24, 24, 24); font-fami
 
 .mission-wrapper {
     width: 100%;
-    padding: 80px 120px 100px;
+    padding: 150px 120px 160px
 }
 
 .mission {
@@ -462,14 +463,18 @@ body {background-color: #fff; font-size: 12px; color: rgb(24, 24, 24); font-fami
 
 .mission-tagline {
     font-size: 46px;
-    padding-bottom: 80px;
+    padding-bottom: 70px;
 }
 
-.mission-text {
+.mission-text-bottom, .mission-text {
     font-size: 20px;
     line-height: 40px;
     letter-spacing: 1px;
-    padding-bottom: 80px;
+    padding-bottom: 70px;
+}
+
+.mission-text {
+    padding-bottom: 30px;
 }
 
 .mission-f-wrapper1 {
@@ -571,7 +576,71 @@ body {background-color: #fff; font-size: 12px; color: rgb(24, 24, 24); font-fami
 /* X. **************         FOOTER         ****************** */
 /* *********************************************************** */
 
-footer {width: 100%;}
+.footer-class {
+    width: 100%;
+    height: 100vh;
+    /* background-image: linear-gradient(-133deg,#99a3e8,#76bddb); */
+    justify-content: flex-end;
+}
+
+.footer-connect {
+    width: 100%;
+    height: calc(100vh - 124px);
+    background-image: linear-gradient(-133deg,#99a3e8,#64C2EC);
+}
+
+.footer-icons {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #27303b;
+    text-align: center;
+}
+
+.footer-bottom {
+    width: 100%;
+    font-size: 14px;
+    background-color: #1d262f;
+    color: #526173;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-icon-container {
+    width: 30px;
+    height: 30px;
+    margin: 0 15px;
+}
+
+.footer-contact-icon {
+    cursor: pointer;
+    opacity: .3;
+    transition: .3s;
+}
+
+.footer-connect-tagline {
+    font-size: 60px;
+    color: #fff;
+}
+
+.footer-connect-text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #fff;
+    max-width: 500px;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.footer-connect-email {
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
 
 /* Y. ***************       OVERRIDES       ****************** */
 /* *********************************************************** */
@@ -606,7 +675,9 @@ footer {width: 100%;}
         opacity: 1;
     }
 
-
+    .footer-contact-icon:hover {
+        opacity: .6;
+    }
 }
 
 @media only screen and (max-width: 1290px) { 
@@ -623,6 +694,18 @@ footer {width: 100%;}
 
 @media only screen and (max-width: 992px) { 
     /* M QUERIES (992) */
+
+    .mission-f-wrapper1 {
+        flex-direction: column;
+    }
+
+    .mission-f-outer2 {
+        width: 100%;
+    }
+
+    .mission-f-outer2:first-of-type {
+        margin-bottom: 40px;
+    }
 }
 
 @media only screen and (max-width: 768px) { 
