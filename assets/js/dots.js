@@ -48,7 +48,7 @@ window.onload = function () {
             var xPos = xy[1] - 200;
             var xPos2 = xy[1] - 400;
 
-            newImg.css("left", xy[0] + "px");
+            newImg.css("left", (xy[0]-randomSize) + "px");
             newImg.css("top", xy[1] + "px");
 
             $("#top-container").append(newImg);
@@ -84,7 +84,7 @@ window.onload = function () {
             var xPos = xy[1] - 190;
             var xPos2 = xy[1] - 380;
 
-            newImg.css("left", xy[0] + "px");
+            newImg.css("left", (xy[0]-randomSize) + "px");
             newImg.css("top", xy[1] + "px");
 
             $("#mid-container").append(newImg);
@@ -119,7 +119,7 @@ window.onload = function () {
         var xPos = xy[1] - 175;
         var xPos2 = xy[1] - 350;
 
-        newImg.css("left", xy[0] + "px");
+        newImg.css("left", (xy[0]-randomSize) + "px");
         newImg.css("top", xy[1] + "px");
 
         $("#bot-container").append(newImg);
@@ -153,7 +153,7 @@ window.onload = function () {
         var xPos = xy[1] - 100;
         var xPos2 = xy[1] - 200;
 
-        newImg.css("left", xy[0] + "px");
+        newImg.css("left", (xy[0]-randomSize) + "px");
         newImg.css("top", xy[1] + "px");
 
         $("#lower-container").append(newImg);
