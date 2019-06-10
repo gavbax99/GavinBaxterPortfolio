@@ -36,7 +36,7 @@ window.onload = function () {
     setTimeout(function () {
         setInterval(function () {
 
-            var randomSize = Math.floor((Math.random() * 8) + 5);
+            var randomSize = Math.floor((Math.random() * 10) + 5);
 
             var newImg = $("<div>")
             newImg.addClass("circle-small");
