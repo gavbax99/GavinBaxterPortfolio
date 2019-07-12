@@ -14,7 +14,7 @@
     <meta name="copyright" content="Copyright owner Gavin Baxter" />
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <link rel="canonical" href="{{pageUrl}}" />
-    <link rel="shortcut icon" href="./assets/images/favicon.png" />
+    <link rel="shortcut icon" href="./assets/images/favicon_green.png" />
 
     <!-- Twitter and Facebook sharing tags -->
     <meta property="og:title" content="European Travel Destinations">
@@ -51,7 +51,7 @@
                             <div class="header-list-line"></div>
                         </li>
                         <li data-name="mission" class="nav-button">
-                            mission
+                            services
                             <div class="header-list-line"></div>
                         </li>
                         <li data-name="connect" class="nav-button">
@@ -66,13 +66,12 @@
 
 
         <!-- SUPER HERO -->
-        <section class="flex-full flex-col hero-wrapper">
+        <section id="dot-container" class="flex-full flex-col hero-wrapper">
+
+            <canvas></canvas>
 
             <!-- HERO TOP -->
             <div class="flex-full flex-row hero-top">
-
-                <div id="top-container"></div>
-                <div id="mid-container"></div>
 
                 <div class="flex-full flex-row hero-name">
                     <div class="flex-full flex-col hero-hello">
@@ -86,16 +85,13 @@
 
                     <div class="hero-webdev">
                         web designer<br>
-                        <span style="color: #64C2EC; font-weight: 900; position: relative; top: 1px;">+</span> developer
+                        <span style="color: #00b09b; font-weight: 900; position: relative; top: 1px;">+</span> developer
                     </div>
                 </div>
             </div>
 
             <!-- HERO BOT -->
             <div class="flex-full flex-col hero-bot">
-
-                <div id="bot-container"></div>
-                <div id="lower-container"></div>
 
                 <div class="flex-full flex-row hero-profile">
                     <div class="flex-full flex-col hero-profile-picture">
@@ -114,10 +110,10 @@
         <!-- PORTFOLIO START -->
         <section id="portfolio" class="flex-full flex-col portfolio-wrapper">
             <div class="flex-full flex-col portfolio">
-                <div class="crete porfolio-tagline">Portfolio</div>
+                <div class="crete portfolio-tagline">Portfolio</div>
 
                 <!-- TOP CARD HOLDER -->
-                <div class="flex-full flex-row porfolio-card-holder">
+                <div class="flex-full flex-row portfolio-card-holder">
 
                     <!-- CARD 1 -->
                     <a href="./egia.html">
@@ -130,8 +126,7 @@
                             <div class="flex-full flex-col card-bot card-shadow">
                                 <div class="card-bot-title crete">EGIA</div>
                                 <div class="card-bot-tagline">FRONT END DEVELOPER</div>
-                                <div class="card-bot-description">Developed front end websites for a non profit company.
-                                    This is the second sentence.</div>
+                                <div class="card-bot-description">Developed front end websites for a non-profit focused on training HVAC contractors.</div>
                             </div>
                         </div>
                     </a>
@@ -146,16 +141,15 @@
 
                             <div class="flex-full flex-col card-bot card-shadow">
                                 <div class="card-bot-title crete">Big Brother Comics</div>
-                                <div class="card-bot-tagline">FULL STACK DEVELOPER/WEBMASTER</div>
-                                <div class="card-bot-description">Developed front end websites for a non profit company.
-                                    This is the second sentence.</div>
+                                <div class="card-bot-tagline">FULL STACK DEVELOPER &amp; WEBMASTER</div>
+                                <div class="card-bot-description">Design, develop, and host a local Comic Book store's main website with Node.js.</div>
                             </div>
                         </div>
                     </a>
                 </div>
 
                 <!-- BOTTOM CARD HOLDER -->
-                <div class="flex-full flex-row porfolio-card-holder">
+                <div class="flex-full flex-row portfolio-card-holder">
 
                     <!-- CARD 3 -->
                     <a href="./ucdavis.html">
@@ -168,8 +162,7 @@
                             <div class="flex-full flex-col card-bot card-shadow">
                                 <div class="card-bot-title crete">UC Davis Extension</div>
                                 <div class="card-bot-tagline">FULL STACK BOOTCAMP COURSE</div>
-                                <div class="card-bot-description">Developed front end websites for a non profit company.
-                                    This is the second sentence.</div>
+                                <div class="card-bot-description">Six-month intensive Bootcamp focused on getting students ready for the workforce.</div>
                             </div>
                         </div>
                     </a>
@@ -185,8 +178,7 @@
                             <div class="flex-full flex-col card-bot card-shadow">
                                 <div class="card-bot-title crete">Personal Projects</div>
                                 <div class="card-bot-tagline">I LIKE TO BUILD STUFF</div>
-                                <div class="card-bot-description">Developed front end websites for a non profit company.
-                                    This is the second sentence.</div>
+                                <div class="card-bot-description">I'm a creator at heart; I love the process of turning an idea into reality.</div>
                             </div>
                         </div>
                     </a>
@@ -199,11 +191,15 @@
         <!-- MISSON START -->
         <section id="mission" class="flex-full flex-col mission-wrapper">
             <div class="flex-full flex-col mission">
-                <div class="crete mission-tagline">Mission</div>
+                <div class="crete mission-tagline">Services</div>
 
-                <div class="mission-text"><span style="font-weight: 700;">"Money makes the world go round."</span> My mission is to use modern design and development techniques to enrich my client's brand (and bank accounts). Web design is complicated; I focus on making </div>
+                <!-- <div class="mission-text"><span style="font-weight: 700;">"Money makes the world go round."</span> My mission is to use modern web design and development techniques to enrich my client's brand <span style="font-style: italic;">(and bank accounts)</span>. However, web design is <span style="font-weight: 700;">complicated;</span> I focus on taking the burden off of your shoulders and getting your website developed. Isn't that easy?   </div> -->
 
-                <div class="mission-text-bottom">To achieve this I frequently use:</div>
+                <!-- <div class="mission-text"><span style="font-weight: 700;">"Money makes the world go round."</span> My mission is to use modern web design and development techniques to enrich my client's brand <span style="font-style: italic;">(and bank accounts)</span>. However, web design is <span style="font-weight: 700;">complicated;</span> I handle 100% of the heavy technical lifting so <span style="font-weight: 700;">you can focus on your brand.</span> I am your Web Expert so you don't have to be. Isn't that easy?   </div> -->
+
+                <div class="mission-text"><span style="font-weight: 700;">"Money makes the world go round."</span> My goal is to use modern web design and development techniques to enrich your brand <span style="font-style: italic;">(and bank accounts).</span> I focus on the complicated, technical stuff so <span style="font-weight: 700;">you can focus on the good stuff - and make more of it.</span></div>
+
+                <div class="mission-text-bottom">To achieve your vision I frequently use these technologies:</div>
 
 
                 <div class="flex-full flex-row mission-f-wrapper1">
@@ -272,10 +268,10 @@
                     Let's connect
                 </div>
                 <div class="footer-connect-text">
-                    I'm interested in creating new revenue streams for you and your brand. Reach out to me on any platform below.
+                    I'm interested in web design and growing your brand. Reach out to me on any of the platforms below.
                 </div>
                 <div class="footer-connect-email">
-                    <a href="mailto:hello@gavinbaxter.com"><img alt="mail icon" src="./assets/images/icon_mail.svg" width="28" style="padding-right: 10px; display: inline;">hello@gavinbaxter.com</a>
+                    <a href="mailto:hello@gavinbaxter.com"><img alt="mail icon" src="./assets/images/icon_mail.svg" width="28" style="padding-right: 10px; display: inline;">hello<i class="fas fa-at"></i>gavinbaxter.com</a>
                 </div>
             </div>
 
@@ -308,7 +304,7 @@
             </div>
 
             <div class="flex-full flex-row footer-bottom">
-                &nbsp;Built with <span style="text-decoration: line-through; margin: 0 4.5px;">love</span> code | Gavin Baxter ©2019
+                Gavin Baxter © 2019 
             </div>
 
         </footer>
@@ -321,7 +317,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./assets/js/underscore.js"></script>
     <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/dots.js"></script>
+    <script src="./assets/js/dot.js"></script>
 
 </body>
 

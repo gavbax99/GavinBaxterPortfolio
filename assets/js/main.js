@@ -12,28 +12,28 @@ $(document).ready(function(){
 
     // ================= SCROLL THROTTLE =================
 
-    var previous = $(window).scrollTop();
-    var throttled = _.throttle(function(){
+    // var previous = $(window).scrollTop();
+    // var throttled = _.throttle(function(){
 
-        console.log("scroll");
+    //     console.log("scroll");
 
-        var check = $(".header-class").css("top");
+    //     var check = $(".header-class").css("top");
 
-        var current = $(this).scrollTop();
+    //     var current = $(this).scrollTop();
 
-        if (current > previous) {
-            if (check == "0px") {
-                $(".header-class").css("top", "-120px");
-            }
-        } else {
-            if (check == "-120px") {
-                $(".header-class").css("top", "0px");
-            }
-        }
-        previous = current;
-    }, 1000);
+    //     if (current > previous) {
+    //         if (check == "0px") {
+    //             $(".header-class").css("top", "-120px");
+    //         }
+    //     } else {
+    //         if (check == "-120px") {
+    //             $(".header-class").css("top", "0px");
+    //         }
+    //     }
+    //     previous = current;
+    // }, 200);
 
-    $(window).scroll(throttled);
+    // $(window).scroll(throttled);
 
 
 });
