@@ -70,28 +70,28 @@ a, a:hover, a:focus, a:active, a[href^="tel"] {background-color: transparent; co
 .flex-row {flex-direction: row;}
 .flex-col {flex-direction: column;}
 
-.dark-txt {color: #000000}
+/* .dark-txt {color: #000000}
 .dark-bg {background-color: #000000}
 .grey-txt {color: #353435}
 .grey-bg {background-color: #353435}
 .lite-grey-txt {color: #CCCCCC}
 .lite-grey-bg {background-color: #CCCCCC}
 .lite-txt {color: #ffffff}
-.lite-bg {background-color: #ffffff}
+.lite-bg {background-color: #ffffff} */
 
-.main-rgb-txt {color: #00a1e4}
+/* .main-rgb-txt {color: #00a1e4}
 .main-rgb-bg {background-color: #00a1e4}
 .dark-rgb-txt {color: #0092d3}
 .dark-rgb-bg {background-color: #0092d3}
 .lite-rgb-txt {color: #0092d3}
-.lite-rgb-bg {background-color: #0092d3}
+.lite-rgb-bg {background-color: #0092d3} */
 
-.font-h {font-family: 'Montserrat', sans-serif;}
-.font-p {font-family: 'Montserrat', sans-serif;}
+/* .font-h {font-family: 'Montserrat', sans-serif;}
+.font-p {font-family: 'Montserrat', sans-serif;} */
 
-h1,h2,h3,h4 {font-family: 'Roboto', serif; margin:0; padding:0;}
+/* h1,h2,h3,h4 {font-family: 'Roboto', serif; margin:0; padding:0;} */
 
-h1{font-size:26px;}
+/* h1{font-size:26px;}
 h2{font-size:36px;}
 h3{font-size:24px;}
 h4{font-size:18px;}
@@ -100,18 +100,18 @@ h4{font-size:18px;}
 .fs2{font-size: 18px;}
 .fs3{font-size: 24px;}
 .fs4{font-size: 32px;}
-.fs5{font-size: 40px;}
+.fs5{font-size: 40px;} */
 
-.uppercase {text-transform: uppercase}
+/* .uppercase {text-transform: uppercase}
 .fw-300 {font-weight: 300}
 .fw-400 {font-weight: 400}
 .fw-500 {font-weight: 500}
 .fw-600 {font-weight: 600}
 .fw-700 {font-weight: 700}
 .fw-800 {font-weight: 800}
-.fw-900 {font-weight: 900}
+.fw-900 {font-weight: 900} */
 
-.font-p {letter-spacing: .5px; line-height: 26px; font-size: 16px; font-family: 'Montserrat', sans-serif;}
+/* .font-p {letter-spacing: .5px; line-height: 26px; font-size: 16px; font-family: 'Montserrat', sans-serif;} */
 
 /* xii. *************         VARS          ****************** */
 /* *********************************************************** */
@@ -132,7 +132,12 @@ h4{font-size:18px;}
 /* 1. ***************         SETUP         ****************** */
 /* *********************************************************** */
 
-body {background-color: #fff; font-size: 12px; color: rgb(24, 24, 24); font-family: 'Open Sans', Arial, sans-serif;}
+body {
+    background-color: #fff;
+    font-size: 12px;
+    color: rgb(24, 24, 24);
+    font-family: 'Open Sans', Arial, sans-serif;
+}
 
 #wrapper {
     width: 100%;
@@ -146,16 +151,10 @@ body {background-color: #fff; font-size: 12px; color: rgb(24, 24, 24); font-fami
     max-width: 100%;
     width: 100%;
     height: 120px;
-    /* background: -moz-linear-gradient(to bottom, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.4) 30%, rgba(255,255,255,0.4) 60%, rgba(255,255,255,0.4) 88%, rgba(255,255,255,0) 100%);
-    background: -webkit-linear-gradient(to bottom, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 30%,rgba(255,255,255,0.4) 60%,rgba(255,255,255,0.4) 88%,rgba(255,255,255,0) 100%);
-    background: linear-gradient(to bottom, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 30%,rgba(255,255,255,0.4) 60%,rgba(255,255,255,0.4) 88%,rgba(255,255,255,0) 100%);    */
     top: 0;
     left: 0;
     padding: 0 120px;
     z-index: 9998;
-    /* transition: all 0.5s cubic-bezier(.50, 0, .50, 1); 
-    -webkit-transition: all 0.5s cubic-bezier(.50, 0, .50, 1); 
-    -moz-transition: all 0.5s cubic-bezier(.50, 0, .50, 1);  */
 }
 
 .header-inner {
@@ -166,7 +165,6 @@ body {background-color: #fff; font-size: 12px; color: rgb(24, 24, 24); font-fami
 
 .header-logo {
     padding: 10px 10px 10px 0px;
-    cursor: pointer;
     border-radius: 50%;
 }
 
@@ -186,7 +184,6 @@ body {background-color: #fff; font-size: 12px; color: rgb(24, 24, 24); font-fami
     cursor: pointer;
     transition: .5s;
     letter-spacing: 1px;
-    /* background-color: rgba(255,255,255,.5); */
     text-shadow: 1px 1px 0 #fff,
     -1px 1px 0 #fff,
     1px -1px 0 #fff,
@@ -285,7 +282,15 @@ body {background-color: #fff; font-size: 12px; color: rgb(24, 24, 24); font-fami
     color: var(--color-black);
 }
 
-/* ~~~~~~~~~~~~~~~~~~ BOT ~~~~~~~~~~~~~~~~~~ */
+.gb-desktop {
+    display: inline;
+}
+
+.gb-mobile {
+    display: none;
+}
+
+/* ~~~~~~~~~~~~~~~~~~ BOTTOM ~~~~~~~~~~~~~~~~~~ */
 
 .hero-bot {
     height: 100vh;
@@ -315,7 +320,7 @@ body {background-color: #fff; font-size: 12px; color: rgb(24, 24, 24); font-fami
     width: calc(100% - 380px);
 }
 
-/* X. **************         PORTFOLIO         ****************** */
+/* 4. **************         PORTFOLIO         ****************** */
 /* ************************************************************** */
 
 .portfolio-wrapper {
@@ -445,62 +450,58 @@ body {background-color: #fff; font-size: 12px; color: rgb(24, 24, 24); font-fami
 }
 
 
-/* X. **************         MISSION         ****************** */
+/* 5. **************         SERVICES         ******************* */
 /* ************************************************************** */
 
 
-.mission-wrapper {
+.services-wrapper {
     width: 100%;
     padding: 150px 120px 160px
 }
 
-.mission {
+.services {
     max-width: 1050px;
     width: 100%;
     align-items: flex-start;
 }
 
-.mission-tagline {
+.services-tagline {
     font-size: 46px;
     padding-bottom: 70px;
 }
 
-.mission-text-bottom, .mission-text {
+.services-text-bottom, .services-text {
     font-size: 20px;
     line-height: 40px;
     letter-spacing: 1px;
     padding-bottom: 70px;
 }
 
-.mission-text {
+.services-text {
     padding-bottom: 30px;
 }
 
-.mission-f-wrapper1 {
+.services-f-wrapper1 {
     width: 100%;
 }
 
-.mission-f-outer2 {
+.services-f-outer2, .services-f-inner2 {
     flex: 1;
 }
 
-.mission-f-inner2 {
-    flex: 1;
-}
-
-.mission-f-image {
+.services-f-image {
     flex: 1;
     height: 100px;
 }
 
-.mission-image-tag {
+.services-image-tag {
     padding-top: 10px;
     letter-spacing: 1px;
     font-size: 14px;
 }
 
 
-/* X. **************         CANVAS         ******************** */
+/* 6. **************         CANVAS         ******************** */
 /* ************************************************************** */
 
 
@@ -512,7 +513,7 @@ canvas {
 }
 
 
-/* X. **************         FOOTER         ****************** */
+/* 7. **************         FOOTER         ****************** */
 /* *********************************************************** */
 
 .footer-class {
@@ -526,10 +527,8 @@ canvas {
     height: calc(100vh - 124px);
     opacity: .9;
     background-image: linear-gradient(-133deg,#00b09b, #32b87c, #96c93d);
-    /* background-image: linear-gradient(-133deg,#99a3e8,#64C2EC);  */
-    /* background-image: linear-gradient(-133deg,#64c2ec,#00b09b); */
-    /* background-image: linear-gradient(-133deg,#DCE35B,#45B649); */
-    /* background-image: linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%); */
+    background-image: -moz-linear-gradient(-133deg,#00b09b, #32b87c, #96c93d);
+    background-image: -webkit-linear-gradient(-133deg,#00b09b, #32b87c, #96c93d);
 }
 
 .footer-icons {
@@ -640,7 +639,7 @@ canvas {
 } */
 
 @media only screen and (max-width: 992px) { 
-    /* M QUERIES (992) BREAK TO MOBILE */
+    /* M QUERIES */
 
     .header-class, .hero-wrapper {
         padding: 0 60px;
@@ -652,7 +651,7 @@ canvas {
 
     .hero-name {
         align-items: center;
-        transform: none;
+        transform: translate(0, -10%);;
         flex-direction: column;
     }
 
@@ -697,23 +696,23 @@ canvas {
     }
 
 
-    .mission-wrapper {
+    .services-wrapper {
         padding: 90px 60px 100px;
     }
     
-    .mission-tagline {
+    .services-tagline {
         padding-bottom: 45px;
     }
 
-    .mission-f-wrapper1 {
+    .services-f-wrapper1 {
         flex-direction: column;
     }
 
-    .mission-f-outer2 {
+    .services-f-outer2 {
         width: 100%;
     }
 
-    .mission-f-outer2:first-of-type {
+    .services-f-outer2:first-of-type {
         margin-bottom: 20px;
     }
 }
@@ -774,11 +773,19 @@ canvas {
         font-size: 68px;
     }
 
-    .portfolio-wrapper, .mission-wrapper {
+    .gb-desktop {
+        display: none;
+    }
+
+    .gb-mobile {
+        display: inline;
+    }
+
+    .portfolio-wrapper, .services-wrapper {
         padding: 60px 30px 70px;
     }
 
-    .portfolio-tagline, .mission-tagline {
+    .portfolio-tagline, .services-tagline {
         padding-bottom: 30px;
         width: 100%;
         text-align: center;
@@ -807,27 +814,27 @@ canvas {
         margin: 0 0 30px 0;
     }
 
-    .mission-text, .mission-text-bottom {
+    .services-text, .services-text-bottom {
         font-size: 18px;
         line-height: 30px;
         padding-bottom: 30px;
         text-align: center;
     }
 
-    .mission-f-inner2 {
+    .services-f-inner2 {
         width: 80%;
         margin-bottom: 15px;
     }
 
-    .mission-f-inner2:last-of-type {
+    .services-f-inner2:last-of-type {
         margin-bottom: 0;
     }
 
-    .mission-f-outer2 {
+    .services-f-outer2 {
         flex-direction: column;
     }
 
-    .mission-f-outer2:first-of-type {
+    .services-f-outer2:first-of-type {
         margin-bottom: 0;
     }
 
@@ -853,9 +860,9 @@ canvas {
     }
 }
 
-@media only screen and (max-width: 360px) { 
-    /* XS FIXES */
-}
+/* @media only screen and (max-width: 360px) { 
+
+} */
 
 
 
