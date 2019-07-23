@@ -117,6 +117,10 @@
     padding-bottom: 0px;
 }
 
+.port-project-tech {
+    padding: 25px 0;
+}
+
 .port-project-info {
     position: relative;
     width: 320px;
@@ -128,7 +132,7 @@
     top: 0;
     right: 0;
     width: 1px;
-    height: 350px;
+    height: 320px;
     background-image: linear-gradient(to bottom,rgba(100,100,100,.3),rgba(100,100,100,.3),rgba(100,100,100,.0));
 }
 
@@ -152,6 +156,7 @@
     font-size: 30px;
     font-weight: 700;
     padding-bottom: 10px;
+    transition: .4s;
 }
 
 .port-project-tags {
@@ -212,6 +217,10 @@
 
     .port-project-button-single:hover {
         box-shadow: 2px 2px 9px 0px rgba(100,100,100,.3);    
+    }
+
+    .port-project-title:hover {
+        color: #32b87c;
     }
 
 }
@@ -328,7 +337,7 @@
     }
 
     .port-project-image, .port-project-tech {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .port-project-tags {
