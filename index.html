@@ -8,11 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Page information -->
-    <title>Gavin Baxter | Web Designer + Developer</title>
+    <title>Gavin Baxter | Front End Developer + Web Designer</title>
     <meta name="description" content="Gavin Baxter, full stack web designer and developer working out of Sacramento, CA. Focused on front-end beauty and back-end functionality.">
-    <meta name="author" content="Gavin Baxter, Web Designer + Developer">
-    <meta name="copyright" content="Copyright owner Gavin Baxter 2019" />
-    <meta name="keywords" content="HTML,CSS,JavaScript,Node.js,React.js,Express,Adobe Illustrator, Adobe Photoshop, front-end, back-end, Sacramento">
+    <meta name="author" content="Gavin Baxter, Front End Developer + Web Designer">
+    <meta name="copyright" content="Copyright owner Gavin Baxter 2020" />
+    <meta name="keywords" content="HTML,CSS,JavaScript,Node.js,React.js,Express,Adobe Illustrator,Adobe Photoshop,front-end,back-end,Sacramento,design,full stack,graphic design">
     <link rel="canonical" href="http://gavinbaxter.com" />
     <link rel="shortcut icon" href="./assets/images/favicon_green.png" />
 
@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Crete+Round&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/portfolio.css" />
 
 </head>
 
@@ -41,10 +42,10 @@
                             portfolio
                             <div class="header-list-line"></div>
                         </li>
-                        <li data-name="services" class="nav-button">
+                        <!-- <li data-name="services" class="nav-button">
                             services
                             <div class="header-list-line"></div>
-                        </li>
+                        </li> -->
                         <li data-name="connect" class="nav-button">
                             connect
                             <div class="header-list-line-last"></div>
@@ -52,16 +53,32 @@
                     </ul>
 
                     <div class="flex-full flex-row hamburger">
-                        <img src="./assets/images/hamburger_open.svg" width="50">
+                        <img src="./assets/images/hamburger_open.svg" width="45">
                     </div>
                 </div>
             </div>
 
             <ul class="flex-full flex-col hamburger-list">
-                <li class="flex-full nav-button" data-name="portfolio">portfolio</li>
-                <li class="flex-full nav-button" data-name="services">services</li>
-                <li class="flex-full nav-button" data-name="connect">contact</li>
-                <li class="flex-full hamburger-x">X</li>
+                <li class="flex-full nav-button" data-name="portfolio">
+					<div class="flex-full nav-button-fill">
+						portfolio
+					</div>
+				</li>
+                <!-- <li class="flex-full nav-button" data-name="services">					
+					<div class="flex-full nav-button-fill">
+						services
+					</div>
+				</li> -->
+                <li class="flex-full nav-button" data-name="connect">
+					<div class="flex-full nav-button-fill">
+						contact
+					</div>
+				</li>
+                <li class="flex-full hamburger-x">
+					<div class="flex-full nav-button-fill nav-transparent">
+						<i class="fas fa-times"></i>
+					</div>
+				</li>
             </ul>
         </header>
         <!-- NAV HEADER END-->
@@ -80,15 +97,15 @@
                         <div class="hero-hey-im">
                             hey, I'm
                         </div>
-                        <div class="hero-gavin-baxter crete">
+                        <h1 class="hero-gavin-baxter crete">
                             <span class="gb-desktop">Gavin Baxter</span>
                             <span class="gb-mobile">Gavin<br>Baxter</span>
-                        </div>
+						</h1>
                     </div>
 
                     <div class="hero-webdev">
-                        web designer<br>
-                        <span style="color: #00b09b; font-weight: 900; position: relative; top: 1px;">+</span> developer
+						front end developer<br>
+                        <span style="color: #00b09b; font-weight: 900; position: relative; top: 1px;">+</span> web designer
                     </div>
                 </div>
             </div>
@@ -102,8 +119,54 @@
                     </div>
 
                     <div class="hero-profile-text">
-                        I'm a full stack web designer &amp; developer out of Sacramento, CA. I design, develop, and manage <span style="font-weight: 700; display: inline;">all of your web needs</span> so you can focus on what really matters: <span style="font-weight: 700; display: inline;">growing your brand.</span>
+                       <p class="hero-profile-p">
+							I'm a front end web developer and designer based in Sacramento, CA. Here are some of my favorite technologies:
+						</p>
+
+						<div class="flex-full flex-row hero-technologies">
+							<div class="flex-full flex-col hero-single-technology">
+								<img alt="tech logo" src="./assets/images/icon_html.png">
+                                <div class="hero-image-tag">HTML 5</div>
+							</div>
+							<div class="flex-full flex-col hero-single-technology">
+								<img alt="tech logo" src="./assets/images/icon_css.png">
+                                <div class="hero-image-tag">CSS 3</div>
+							</div>
+							<div class="flex-full flex-col hero-single-technology">
+								<img alt="tech logo" src="./assets/images/icon_js.png">
+                                <div class="hero-image-tag">JS ES6</div>
+							</div>
+							<div class="flex-full flex-col hero-single-technology">
+								<img alt="tech logo" src="./assets/images/icon_react.png">
+                                <div class="hero-image-tag">React</div>
+							</div>
+							<div class="flex-full flex-col hero-single-technology">
+								<img alt="tech logo" src="./assets/images/icon_redux.png">
+                                <div class="hero-image-tag">Redux</div>
+							</div>
+							<div class="flex-full flex-col hero-single-technology">
+								<img alt="tech logo" src="./assets/images/icon_node.png">
+                                <div class="hero-image-tag">Node</div>
+							</div>
+							<div class="flex-full flex-col hero-single-technology">
+								<img alt="tech logo" src="./assets/images/icon_mysql.png">
+                                <div class="hero-image-tag">MySQL</div>
+							</div>
+							<!-- <div class="flex-full flex-col hero-single-technology">
+								<img alt="tech logo" src="./assets/images/icon_wordpress.png">
+                                <div class="hero-image-tag">WordPress</div>
+							</div> -->
+							<div class="flex-full flex-col hero-single-technology">
+								<img alt="tech logo" src="./assets/images/icon_ai.png">
+                                <div class="hero-image-tag">Illustrator</div>
+							</div>
+							<div class="flex-full flex-col hero-single-technology">
+								<img alt="tech logo" src="./assets/images/icon_aps.png">
+                                <div class="hero-image-tag">Photoshop</div>
+							</div>
+						</div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -113,162 +176,390 @@
         <!-- PORTFOLIO START -->
         <section id="portfolio" class="flex-full flex-col portfolio-wrapper">
             <div class="flex-full flex-col portfolio">
-                <div class="crete portfolio-tagline">Portfolio</div>
+				<h2 class="crete portfolio-tagline">Portfolio</h2>
 
-                <!-- TOP CARD HOLDER -->
-                <div class="flex-full flex-row portfolio-card-holder">
 
-                    <!-- CARD 1 -->
-                    <a href="./egia.html">
-                        <div class="flex-full flex-col portfolio-card card-pad-1">
-                            <div class="flex-full flex-col card-top card-top-image-1 card-shadow">
-                                <div class="card-top-overlay"></div>
-                                <img alt="EGIA logo" src="./assets/images/logo_egia_svg.svg" width="140">
-                            </div>
+				<!-- single project start -->
+				<div class="flex-full flex-row port-project-container">
 
-                            <div class="flex-full flex-col card-bot card-shadow">
-                                <div class="card-bot-title crete">EGIA</div>
-                                <div class="card-bot-tagline">FRONT END DEVELOPER</div>
-                                <div class="card-bot-description">Developed front end websites for a non-profit focused on training HVAC contractors.</div>
-                            </div>
+					<!-- info -->
+					<div class="flex-full flex-col port-project-info">
+
+						<div class="port-project-line"></div>
+
+						<div class="port-project-image">
+							<a target="_blank" href="./assets/images/home-101-full.jpg"><img alt="project image" src="./assets/images/port_home101.png" width="100%"></a>
+						</div>
+
+						<!-- tech -->
+						<div class="flex-full flex-col port-project-tech">
+							<div class="port-project-tech-title crete">
+								Technologies used:
+							</div>
+
+							<div class="flex-full flex-row port-project-tech-icon">
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_html_css_js.png" width="25">
+									<div class="icon-hover-tag">HTML/CSS/JS</div>
+								</div>
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_magento.png" width="25">
+									<div class="icon-hover-tag">Magento</div>
+								</div>
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_ai.png" width="25">
+									<div class="icon-hover-tag">Illustrator</div>
+								</div>
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_aps.png" width="25">
+									<div class="icon-hover-tag">Photoshop</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<!-- description -->
+					<div class="flex-full flex-col port-project-text">
+						<a target="_blank" href="./assets/images/home-101-full.jpg"><div class="port-project-title crete">Home 101</div></a>
+						<div class="port-project-tags">5/2020</div>
+						<div class="port-project-description">
+							One of many ecommerce websites I built while working at AVB Marketing (9/2019 - 6/2020). Our members were primarily mom-and-pop appliance, mattress, and furniture outlets. Home 101 is a high-end appliance and fixtures outlet located in Rancho Cucamonga, CA. They wanted their website to reflect their high-end products and services.
+							<br><br>
+							I used HTML, CSS, JS, and Magento for page management. The store page is not yet live; <a target="_blank" href="./assets/images/home-101-full.jpg">click here to view a full page screenshot.</a>
+						</div>
+					</div>
+				</div>
+				<!-- single project end -->
+
+
+				<!-- single project start -->
+				<div class="flex-full flex-row port-project-container">
+
+					<!-- info -->
+					<div class="flex-full flex-col port-project-info">
+
+						<div class="port-project-line"></div>
+
+						<div class="port-project-image">
+							<a target="_blank" href="https://www.avbevents.com/summit-2020/"><img alt="project image" src="./assets/images/port_summit.png" width="100%"></a>
+						</div>
+
+						<!-- tech -->
+						<div class="flex-full flex-col port-project-tech">
+							<div class="port-project-tech-title crete">
+								Technologies used:
+							</div>
+
+							<div class="flex-full flex-row port-project-tech-icon">
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_html_css_js.png" width="25">
+									<div class="icon-hover-tag">HTML/CSS/JS</div>
+								</div>
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_wordpress.png" width="25">
+									<div class="icon-hover-tag">WordPress</div>
+								</div>
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_ai.png" width="25">
+									<div class="icon-hover-tag">Illustrator</div>
+								</div>
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_aps.png" width="25">
+									<div class="icon-hover-tag">Photoshop</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<!-- description -->
+					<div class="flex-full flex-col port-project-text">
+						<a target="_blank" href="https://www.avbevents.com/summit-2020/"><div class="port-project-title crete">Summit 2020</div></a>
+						<div class="port-project-tags">3/2020</div>
+						<div class="port-project-description">
+							AVB Marketing holds two large industry events each year, 'Summit' and 'Convention'. I was tasked with designing and building the Summit 2020 event page from the ground up. I worked closely with the event planners ensure all relevant infomation was captured.
+							<br><br>
+							I used HTML, CSS, JS, and WordPress for page management.
+						</div>
+					</div>
+				</div>
+				<!-- single project end -->
+
+
+				<!-- single project start -->
+				<div class="flex-full flex-row port-project-container">
+
+					<!-- info -->
+					<div class="flex-full flex-col port-project-info">
+
+						<div class="port-project-line"></div>
+
+						<div class="port-project-image">
+							<a target="_blank" href="http://socksanta.org"><img alt="project image" src="./assets/images/port_socksanta.png" width="100%"></a>
+						</div>
+
+						<!-- tech -->
+						<div class="flex-full flex-col port-project-tech">
+							<div class="port-project-tech-title crete">
+								Technologies used:
+							</div>
+
+							<div class="flex-full flex-row port-project-tech-icon">
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_html_css_js.png" width="25">
+									<div class="icon-hover-tag">HTML/CSS/JS</div>
+								</div>
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_cpanel.png" width="25">
+									<div class="icon-hover-tag">cPanel</div>
+								</div>
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_ai.png" width="25">
+									<div class="icon-hover-tag">Illustrator</div>
+								</div>
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_aps.png" width="25">
+									<div class="icon-hover-tag">Photoshop</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<!-- description -->
+					<div class="flex-full flex-col port-project-text">
+						<a target="_blank" href="http://socksanta.org"><div class="port-project-title crete">Sock Santa</div></a>
+						<div class="port-project-tags">11/2019</div>
+						<div class="port-project-description">
+							In late 2019 I ran a sock drive to raise socks for the homeless community in Sacramento. With the help of many generous contributors I raised 224 new and like-new pairs of socks and handed them out to the homeless on Christmas day.
+							<br><br>
+							I used HTML, CSS, and JS to build the page and cPanel for hosting.
+						</div>
+					</div>
+				</div>
+				<!-- single project end -->
+				
+				
+				<!-- single project start -->
+                <div class="flex-full flex-row port-project-container">
+
+                    <!-- info -->
+                    <div class="flex-full flex-col port-project-info">
+
+                        <div class="port-project-line"></div>
+
+                        <div class="port-project-image">
+                            <a target="_blank" href="http://bigbrothercomics.com">
+                                <img alt="project image" src="./assets/images/port_bb.png" width="100%">
+                            </a>
                         </div>
-                    </a>
 
-                    <!-- CARD 2 -->
-                    <a href="./bigbrothercomics.html">
-                        <div class="flex-full flex-col portfolio-card card-pad-2">
-                            <div class="flex-full flex-col card-top card-top-image-2 card-shadow">
-                                <div class="card-top-overlay"></div>
-                                <img alt="EGIA logo" src="./assets/images/logo_bb_svg.svg" width="90">
+                        <!-- tech -->
+                        <div class="flex-full flex-col port-project-tech">
+                            <div class="port-project-tech-title crete">
+                                Technologies used:
                             </div>
 
-                            <div class="flex-full flex-col card-bot card-shadow">
-                                <div class="card-bot-title crete">Big Brother Comics</div>
-                                <div class="card-bot-tagline">FULL STACK DEVELOPER &amp; WEBMASTER</div>
-                                <div class="card-bot-description">Design, develop, and host a local Comic Book store's main website with Node.JS.</div>
+                            <div class="flex-full flex-row port-project-tech-icon">
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_html_css_js.png" width="25">
+									<div class="icon-hover-tag">HTML/CSS/JS</div>
+								</div>
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_node.png" width="25">
+									<div class="icon-hover-tag">Node</div>
+								</div>
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_express.png" width="25">
+									<div class="icon-hover-tag">Express</div>
+								</div>
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_mysql.png" width="25">
+									<div class="icon-hover-tag">MySQL</div>
+								</div>
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_ai.png" width="25">
+									<div class="icon-hover-tag">Illustrator</div>
+								</div>
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_aps.png" width="25">
+									<div class="icon-hover-tag">Photoshop</div>
+								</div>
                             </div>
+
                         </div>
-                    </a>
+                    </div>
+
+                    <!-- description -->
+                    <div class="flex-full flex-col port-project-text">
+                            <a target="_blank" href="https://bigbrothercomics.com/"><div class="port-project-title crete">Big Brother Comics</div></a>
+                            <div class="port-project-tags">5/2019</div>
+                        <div class="port-project-description">
+                            Kenny, the owner of Big Brother Comics, had grown beyond the bland and bloated website he had been previously using. He wanted a website that was cleaner, faster, more on-brand, and most importantly one that was responsive for mobile devices.
+                            <br><br>
+                            Kenny wanted the ability to post bulletins of upcoming events to his website. I implemented a simple and secure admin portal for him and his employees to write bulletins that would post to a MySQL database through Node.JS and Express. Hosted and managed on cPanel.
+                        </div>
+                    </div>
                 </div>
+				<!-- single project end -->
 
-                <!-- BOTTOM CARD HOLDER -->
-                <div class="flex-full flex-row portfolio-card-holder">
+				
+				<!-- single project start -->
+				<div class="flex-full flex-row port-project-container">
 
-                    <!-- CARD 3 -->
-                    <a href="./ucdavis.html">
-                        <div class="flex-full flex-col portfolio-card card-pad-3">
-                            <div class="flex-full flex-col card-top card-top-image-3 card-shadow">
-                                <div class="card-top-overlay"></div>
-                                <img alt="EGIA logo" src="./assets/images/logo_ucd_svg.svg" width="200">
+					<!-- info -->
+					<div class="flex-full flex-col port-project-info">
+
+						<div class="port-project-line"></div>
+
+						<div class="port-project-image">
+							<a target="_blank" href="./assets/images/epic-full.jpg"><img alt="project image" src="./assets/images/port_epic.png" width="100%"></a>
+						</div>
+
+						<!-- tech -->
+						<div class="flex-full flex-col port-project-tech">
+							<div class="port-project-tech-title crete">
+								Technologies used:
+							</div>
+
+							<div class="flex-full flex-row port-project-tech-icon">
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_html_css_js.png" width="25">
+									<div class="icon-hover-tag">HTML/CSS/JS</div>
+								</div>
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_wordpress.png" width="25">
+									<div class="icon-hover-tag">WordPress</div>
+								</div>
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_ai.png" width="25">
+									<div class="icon-hover-tag">Illustrator</div>
+								</div>
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_aps.png" width="25">
+									<div class="icon-hover-tag">Photoshop</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<!-- description -->
+					<div class="flex-full flex-col port-project-text">
+						<a target="_blank" href="./assets/images/epic-full.jpg"><div class="port-project-title crete">EPIC2019</div></a>
+						<div class="port-project-tags">3/2019</div>
+						<div class="port-project-description">
+							The Electric &amp; Gas Industries Association (EGIA) hosts a large annual conference in Las Vegas to bring together industry experts and their members for the "Ultimate Educational Experience for Contractors."
+							<br><br>
+							I used HTML, CSS, JS, and WordPress for page management. The event page is no longer live; <a target="_blank" href="./assets/images/epic-full.jpg">click here to view a full page screenshot. wdadwadawd</a>
+						</div>
+					</div>
+				</div>
+				<!-- single project end -->
+
+
+				<!-- single project start -->
+				<div class="flex-full flex-row port-project-container">
+
+					<!-- info -->
+					<div class="flex-full flex-col port-project-info">
+
+						<div class="port-project-line"></div>
+
+						<div class="port-project-image">
+							<a target="_blank" href="https://ultimate-luchador.herokuapp.com/"><img alt="project image" src="./assets/images/port_luchador.png" width="100%"></a>
+						</div>
+
+						<div class="flex-full flex-row port-project-mobile">
+							<img alt="mobile view" src="./assets/images/port_mobile_luch1.png" width="80">
+							<img alt="mobile view" src="./assets/images/port_mobile_luch2.png" width="80">
+							<img alt="mobile view" src="./assets/images/port_mobile_luch3.png" width="80">
+						</div>
+
+						<!-- tech -->
+						<div class="flex-full flex-col port-project-tech">
+							<div class="port-project-tech-title crete">
+								Technologies used:
+							</div>
+
+							<!-- <div class="flex-full flex-row port-project-tech-icon">
+								<img alt="tech icon" src="./assets/images/icon_html_css_js.png" width="25">
+								<img alt="tech icon" src="./assets/images/icon_mysql.png" width="25">
+								<img alt="tech icon" src="./assets/images/icon_express.png" width="25">
+								<img alt="tech icon" src="./assets/images/icon_react.png" width="25">
+								<img alt="tech icon" src="./assets/images/icon_node.png" width="25">
+								<img alt="tech icon" src="./assets/images/icon_firebsae.png" width="25">
+								<img alt="tech icon" src="./assets/images/icon_ai.png" width="25">
+							</div> -->
+
+							<div class="flex-full flex-row port-project-tech-icon">
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_html_css_js.png" width="25">
+									<div class="icon-hover-tag">HTML/CSS/JS</div>
+								</div>
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_react.png" width="25">
+									<div class="icon-hover-tag">React</div>
+								</div>
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_redux.png" width="25">
+									<div class="icon-hover-tag">Redux</div>
+								</div>
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_node.png" width="25">
+									<div class="icon-hover-tag">Node</div>
+								</div>
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_express.png" width="25">
+									<div class="icon-hover-tag">Express</div>
+								</div>
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_mysql.png" width="25">
+									<div class="icon-hover-tag">MySQL</div>
+								</div>
+								<div style="position: relative;">
+									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_ai.png" width="25">
+									<div class="icon-hover-tag">Illustrator</div>
+								</div>
                             </div>
 
-                            <div class="flex-full flex-col card-bot card-shadow">
-                                <div class="card-bot-title crete">UC Davis Extension</div>
-                                <div class="card-bot-tagline">FULL STACK BOOTCAMP COURSE</div>
-                                <div class="card-bot-description">Six month intensive Bootcamp focused on getting students ready for the workforce.</div>
-                            </div>
-                        </div>
-                    </a>
+						</div>
+					</div>
 
-                    <!-- CARD 4 -->
-                    <a href="./personal.html">
-                        <div class="flex-full flex-col portfolio-card card-pad-4">
-                            <div class="flex-full flex-col card-top card-top-image-4 card-shadow">
-                                <div class="card-top-overlay"></div>
-                                <img alt="EGIA logo" src="./assets/images/logo_gb_cutout_svg.svg" width="100">
-                            </div>
+					<!-- description -->
+					<div class="flex-full flex-col port-project-text">
+						<a target="_blank" href="https://ultimate-luchador.herokuapp.com/"><div class="port-project-title crete">Ultimate Luchador</div></a>
+						<div class="port-project-tags">11/2018</div>
+						<div class="port-project-description">
+							A React browser game with mobile playability in mind. I was the lead graphic designer, game designer, and developer for this project, personally committing nearly <a target="_blank" href="https://github.com/gavbax99/ultimate-luchador/graphs/contributors"><span style="text-decoration: underline;">80,000 lines of code</span></a> over the course of four weeks.
+							<br><br>
+							Ultimate Luchador is a text-based, player-vs-player RPG game. You begin your journey as a rookie with the hopes of raising your Fame level to become the Ultimate Luchador. You have three abilities that change and get more powerful as you level up your Luchador by fighting against other players with a similar Fame level.
+							<br><br>
+							Ultimate Luchador is built on a SERN stack - MySQL, Express, React, and Node. We utilized Redux for easier access to our game data.
+						</div>
+					</div>
+				</div>
+				<!-- single project end -->
+			
 
-                            <div class="flex-full flex-col card-bot card-shadow">
-                                <div class="card-bot-title crete">Personal Projects</div>
-                                <div class="card-bot-tagline">I LIKE TO BUILD STUFF</div>
-                                <div class="card-bot-description">I'm a creator at heart; I love the process of turning an idea into reality.</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
             </div>
         </section>
         <!-- PORTFOLIO END -->
-
-
-        <!-- SERVICES START -->
-        <section id="services" class="flex-full flex-col services-wrapper">
-            <div class="flex-full flex-col services">
-                <div class="crete services-tagline">Services</div>
-
-                <div class="services-text"><span style="font-weight: 700;">"Money makes the world go round."</span> My goal is to use modern web design and development techniques to enrich your brand <span style="font-style: italic;">(and bank accounts).</span> My services range from front-end design, back-end data management, dedicated web hosting, email management, graphic design &amp; branding, and <span style="font-weight: 700;">clean, lean, &amp; responsive website development</span> built from the ground up.</div>
-
-                <div class="services-text-bottom">To bring your vision to life I frequently use these technologies:</div>
-
-                <div class="flex-full flex-row services-f-wrapper1">
-
-                    <div class="flex-full flex-row services-f-outer2">
-                        <div class="flex-full flex-row services-f-inner2">
-                            <div class="flex-full flex-col services-f-image">
-                                <img alt="tech logo" src="./assets/images/icon_html_css_js.png" width="70">
-                                <div class="services-image-tag">HTML CSS JS</div>
-                            </div>
-                            <div class="flex-full flex-col services-f-image">
-                                <img alt="tech logo" src="./assets/images/icon_mysql.png" width="70">
-                                <div class="services-image-tag">MySQL</div>
-                            </div>
-                        </div>
-                        
-                        <div class="flex-full flex-row services-f-inner2">
-                            <div class="flex-full flex-col services-f-image">
-                                <img alt="tech logo" src="./assets/images/icon_express.png" width="70">
-                                <div class="services-image-tag">Express</div>
-                            </div>
-                            <div class="flex-full flex-col services-f-image">
-                                <img alt="tech logo" src="./assets/images/icon_react.png" width="70">
-                                <div class="services-image-tag">React.JS</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex-full flex-row services-f-outer2">
-                        <div class="flex-full flex-row services-f-inner2">
-                            <div class="flex-full flex-col services-f-image">
-                                <img alt="tech logo" src="./assets/images/icon_node.png" width="70">
-                                <div class="services-image-tag">Node.JS</div>
-                            </div>
-                            <div class="flex-full flex-col services-f-image">
-                                <img alt="tech logo" src="./assets/images/icon_wordpress.png" width="70">
-                                <div class="services-image-tag">WordPress</div>
-                            </div>
-                        </div>
-
-                        <div class="flex-full flex-row services-f-inner2">
-                            <div class="flex-full flex-col services-f-image">
-                                <img alt="tech logo" src="./assets/images/icon_ai.png" width="70">
-                                <div class="services-image-tag">Illustrator</div>
-                            </div>
-                            <div class="flex-full flex-col services-f-image">
-                                <img alt="tech logo" src="./assets/images/icon_aps.png" width="70">
-                                <div class="services-image-tag">Photoshop</div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-        <!-- SERVICES END -->
 
 
         <!-- FOOTER START -->
         <footer id="connect" class="flex-full flex-col footer-class">
 
             <div class="flex-full flex-col footer-connect">
-                <div class="footer-connect-tagline crete">
+                <h2 class="footer-connect-tagline crete">
                     Let's connect
-                </div>
+                </h2>
                 <div class="footer-connect-text">
-                    I'm interested in web design and growing your brand. Reach out to me on any of the platforms below.
+                    I'm interested in web development and growing your brand. Reach out to me on any of the platforms&nbsp;below.
                 </div>
                 <div class="footer-connect-email">
-                    <a href="mailto:hello@gavinbaxter.com"><img alt="mail icon" src="./assets/images/icon_mail.svg" width="28" style="padding-right: 10px; display: inline;">gav.bax<i class="fas fa-at"></i>gmail.com</a>
+                    <a href="mailto:hello@gavinbaxter.com"><img alt="mail icon" src="./assets/images/icon_mail.svg" width="28" style="padding-right: 10px; display: inline;">hello<i class="fas fa-at"></i>gavinbaxter.com</a>
                 </div>
             </div>
 
@@ -286,22 +577,22 @@
                     </a>
                 </div> -->
 
-                 <div class="footer-icon-container">
+                 <!-- <div class="footer-icon-container">
                     <a target="_blank" href="https://www.facebook.com/gavinbaxter916">
                         <img class="footer-contact-icon" alt="Facebook logo" src="./assets/images/icon_fb.svg">
                     </a>
-                </div>
+                </div> -->
 
-                 <div class="footer-icon-container">
+                 <!-- <div class="footer-icon-container">
                     <a target="_blank" href="./assets/docs/baxter-resume.pdf">
                         <img class="footer-contact-icon" alt="CV logo" src="./assets/images/icon_cv.svg">
                     </a>
-                </div>
+                </div> -->
 
             </div>
 
             <div class="flex-full flex-row footer-bottom">
-                Gavin Baxter © 2019 
+                Gavin Baxter ©&nbsp;2020
             </div>
 
         </footer>

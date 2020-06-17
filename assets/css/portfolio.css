@@ -24,9 +24,9 @@
     letter-spacing: .5px;
 }
 
-.header-list {
+/* .header-list {
     text-align: right !important;
-}
+} */
 
 
 /* ================== TITLE ================== */
@@ -209,6 +209,23 @@
     margin: 0 5px;
 }
 
+.icon-hover-tag {
+	font-size: 12px;
+    text-align: center;
+    background-color: #fff;
+    color: #252525;
+    border-radius: 50px;
+    border: 1px solid #252525;
+    position: absolute;
+	top: 38px;
+	right: 50%;
+    padding: 5px 10px;
+    z-index: 1;
+	transform: translate(50%);
+	opacity: 0;
+	transition: 0.3s;
+}
+
 /* Z. ***************     MEDIA QUERIES     ****************** */
 /* *********************************************************** */
 
@@ -221,8 +238,13 @@
 
     .port-project-title:hover {
         color: #32b87c;
-    }
-
+	}
+	
+	.icon-hover:hover + .icon-hover-tag,
+	.icon-hover:focus + .icon-hover-tag {
+		top: 32px;
+		opacity: 1;
+	}
 }
 
 @media only screen and (max-width: 992px) { 
@@ -357,12 +379,12 @@
     }
 
     .port-project-description {
-        text-align: center;
+        text-align: left;
     }
 
-    .header-list {
+    /* .header-list {
         display: block !important;
-    }
+    } */
 
     .port-logo {
         display: none;
