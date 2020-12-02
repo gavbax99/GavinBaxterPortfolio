@@ -1,9 +1,9 @@
 ## Gavin Baxter
-Front End Developer + Web Designer
-
----
 
 #### Looking for work!
+
+Front End Developer + Web Designer
+
 Portfolio: www.gavinbaxter.com
 
 Email: hello@gavinbaxter.com
