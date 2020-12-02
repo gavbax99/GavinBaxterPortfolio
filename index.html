@@ -3,609 +3,576 @@
 
 <head>
     <!-- Meta setup -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- Page information -->
-    <title>Gavin Baxter | Front End Developer + Web Designer</title>
-    <meta name="description" content="Gavin Baxter, full stack web designer and developer working out of Sacramento, CA. Focused on front-end beauty and back-end functionality.">
-    <meta name="author" content="Gavin Baxter, Front End Developer + Web Designer">
+    <title>Gavin Baxter • Front End Developer + Web Designer</title>
+    <meta name="description" content="Gavin Baxter, front end developer and web designer working out of Sacramento, CA. Focused on front end beauty and back end functionality." />
+    <meta name="author" content="Gavin Baxter, Front End Developer + Web Designer" />
     <meta name="copyright" content="Copyright owner Gavin Baxter 2020" />
-    <meta name="keywords" content="HTML,CSS,JavaScript,Node.js,React.js,Express,Adobe Illustrator,Adobe Photoshop,front-end,back-end,Sacramento,design,full stack,graphic design">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Node,React,Redux,Express,Adobe Illustrator,Adobe Photoshop,front end,back end,Sacramento,design,full stack,graphic design" />
     <link rel="canonical" href="http://gavinbaxter.com" />
     <link rel="shortcut icon" href="./assets/images/favicon_green.png" />
 
     <!-- Style links -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Crete+Round&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
-	<link rel="stylesheet" type="text/css" href="./assets/css/portfolio.css" />
-
 </head>
 
 <body>
 
-    <div id="wrapper">
+	<!-- White loader -->
+	<div class="load-cover"></div>
 
-        <!-- NAV HEADER -->
-        <header class="flex-full flex-row header-class">
-            <div class="flex-full flex-row header-inner">
-                <div class="header-logo">
-                    <img alt="Gavin Baxter logo" width="40" src="./assets/images/logo_gb_square_svg.svg">
-                </div>
+	<!-- NAV HEADER -->
+	<header class="flex-full flex-row header-class">
+		<div class="flex-full flex-row header-inner">
+			<div class="header-logo">
+				<img alt="Gavin Baxter logo" width="40" src="./assets/images/logo_gb_square_svg.svg">
+			</div>
 
-                <div class="flex-full flex-row">
-                    <ul class="flex-full flex-row header-list">
-                        <li data-name="portfolio" class="nav-button">
-                            portfolio
-                            <div class="header-list-line"></div>
-                        </li>
-                        <!-- <li data-name="services" class="nav-button">
-                            services
-                            <div class="header-list-line"></div>
-                        </li> -->
-                        <li data-name="connect" class="nav-button">
-                            connect
-                            <div class="header-list-line-last"></div>
-                        </li>
-                    </ul>
-
-                    <div class="flex-full flex-row hamburger">
-                        <img src="./assets/images/hamburger_open.svg" width="45">
-                    </div>
-                </div>
-            </div>
-
-            <ul class="flex-full flex-col hamburger-list">
-                <li class="flex-full nav-button" data-name="portfolio">
-					<div class="flex-full nav-button-fill">
+			<!-- Desktop -->
+			<div class="flex-full flex-row">
+				<ul class="flex-full flex-row header-list">
+					<li data-name="portfolio" class="nav-button">
 						portfolio
+						<div class="header-list-line"></div>
+					</li>
+					<li data-name="connect" class="nav-button">
+						connect
+						<div class="header-list-line-last"></div>
+					</li>
+				</ul>
+
+				<div class="flex-full flex-row hamburger">
+					<img alt="Mobile menu icon" src="./assets/images/hamburger_open.svg" width="45">
+				</div>
+			</div>
+		</div>
+
+		<!-- Mobile -->
+		<ul class="flex-full flex-col hamburger-list">
+			<li class="flex-full nav-button" data-name="portfolio">
+				<p class="flex-full nav-button-fill">
+					portfolio
+				</p>
+			</li>
+			<li class="flex-full nav-button" data-name="connect">
+				<p class="flex-full nav-button-fill">
+					contact
+				</p>
+			</li>
+			<li class="flex-full hamburger-x">
+				<div class="flex-full nav-button-fill nav-transparent">
+					<img alt="Mobile close menu icon" src="./assets/images/hamburger_x.svg" width="15" style="padding-top: 4px;">
+				</div>
+			</li>
+		</ul>
+	</header>
+	<!-- NAV HEADER END-->
+
+
+	<!-- SUPER HERO -->
+	<section id="dot-container" class="flex-full flex-col hero-wrapper">
+
+		<canvas></canvas>
+
+		<!-- HERO TOP -->
+		<div class="flex-full flex-row hero-top">
+
+			<div class="flex-full flex-row hero-name">
+				<div class="flex-full flex-col hero-hello">
+					<p class="hero-hey-im">
+						hey, I'm
+					</p>
+					<h1 class="hero-gavin-baxter crete">
+						<span class="gb-desktop">Gavin Baxter</span>
+						<span class="gb-mobile">Gavin<br>Baxter</span>
+					</h1>
+				</div>
+
+				<p class="hero-webdev">
+					front end developer<br>
+					<span style="color: #00b09b; font-weight: 900; position: relative; top: 1px;">+</span> web designer
+				</p>
+			</div>
+		</div>
+
+		<!-- HERO BOT -->
+		<div class="flex-full flex-col hero-bot">
+
+			<div class="flex-full flex-row hero-profile">
+				<div class="flex-full flex-col hero-profile-picture">
+					<img alt="Gavin Baxter profile picture" src="./assets/images/face_sml.jpg">
+				</div>
+
+				<div class="hero-profile-text">
+					<p class="hero-profile-p">
+						I'm a front end developer and web designer that lives in Sacramento,&nbsp;CA. Here are some of my favorite technologies:
+					</p>
+
+					<div class="flex-full flex-row hero-technologies">
+						<div class="flex-full flex-col hero-single-technology">
+							<img alt="tech logo" src="./assets/images/icon_html.png">
+							<p class="hero-image-tag">HTML 5</p>
+						</div>
+						<div class="flex-full flex-col hero-single-technology">
+							<img alt="tech logo" src="./assets/images/icon_css.png">
+							<p class="hero-image-tag">CSS 3</p>
+						</div>
+						<div class="flex-full flex-col hero-single-technology">
+							<img alt="tech logo" src="./assets/images/icon_js.png">
+							<p class="hero-image-tag">JS ES6</p>
+						</div>
+						<div class="flex-full flex-col hero-single-technology">
+							<img alt="tech logo" src="./assets/images/icon_react.png">
+							<p class="hero-image-tag">React</p>
+						</div>
+						<div class="flex-full flex-col hero-single-technology">
+							<img alt="tech logo" src="./assets/images/icon_redux.png">
+							<p class="hero-image-tag">Redux</p>
+						</div>
+						<div class="flex-full flex-col hero-single-technology">
+							<img alt="tech logo" src="./assets/images/icon_node.png">
+							<p class="hero-image-tag">Node</p>
+						</div>
+						<div class="flex-full flex-col hero-single-technology">
+							<img alt="tech logo" src="./assets/images/icon_mysql.png">
+							<p class="hero-image-tag">MySQL</p>
+						</div>
+						<div class="flex-full flex-col hero-single-technology">
+							<img alt="tech logo" src="./assets/images/icon_ai.png">
+							<p class="hero-image-tag">Illustrator</p>
+						</div>
+						<div class="flex-full flex-col hero-single-technology">
+							<img alt="tech logo" src="./assets/images/icon_aps.png">
+							<p class="hero-image-tag">Photoshop</p>
+						</div>
 					</div>
-				</li>
-                <!-- <li class="flex-full nav-button" data-name="services">					
-					<div class="flex-full nav-button-fill">
-						services
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- SUPER HERO END -->
+
+
+	<!-- PORTFOLIO START -->
+	<section id="portfolio" class="flex-full flex-col portfolio-wrapper">
+		<div class="flex-full flex-col portfolio">
+			<h2 class="crete portfolio-tagline">Portfolio</h2>
+
+			<!-- single project start -->
+			<div class="flex-full flex-row port-project-container">
+
+				<!-- info -->
+				<div class="flex-full flex-col port-project-info">
+					<div class="port-project-line"></div>
+					<div class="flex-full flex-row port-project-mobile">
+						<img alt="mobile view" src="./assets/images/port_mobile-moodyear-1.png">
+						<img alt="mobile view" src="./assets/images/port_mobile-moodyear-2.png">
+						<img alt="mobile view" src="./assets/images/port_mobile-moodyear-3.png">
 					</div>
-				</li> -->
-                <li class="flex-full nav-button" data-name="connect">
-					<div class="flex-full nav-button-fill">
-						contact
-					</div>
-				</li>
-                <li class="flex-full hamburger-x">
-					<div class="flex-full nav-button-fill nav-transparent">
-						<i class="fas fa-times"></i>
-					</div>
-				</li>
-            </ul>
-        </header>
-        <!-- NAV HEADER END-->
 
-
-        <!-- SUPER HERO -->
-        <section id="dot-container" class="flex-full flex-col hero-wrapper">
-
-            <canvas></canvas>
-
-            <!-- HERO TOP -->
-            <div class="flex-full flex-row hero-top">
-
-                <div class="flex-full flex-row hero-name">
-                    <div class="flex-full flex-col hero-hello">
-                        <div class="hero-hey-im">
-                            hey, I'm
-                        </div>
-                        <h1 class="hero-gavin-baxter crete">
-                            <span class="gb-desktop">Gavin Baxter</span>
-                            <span class="gb-mobile">Gavin<br>Baxter</span>
-						</h1>
-                    </div>
-
-                    <div class="hero-webdev">
-						front end developer<br>
-                        <span style="color: #00b09b; font-weight: 900; position: relative; top: 1px;">+</span> web designer
-                    </div>
-                </div>
-            </div>
-
-            <!-- HERO BOT -->
-            <div class="flex-full flex-col hero-bot">
-
-                <div class="flex-full flex-row hero-profile">
-                    <div class="flex-full flex-col hero-profile-picture">
-                        <img alt="Gavin Baxter profile picture" src="./assets/images/face.jpg" width="500">
-                    </div>
-
-                    <div class="hero-profile-text">
-                       <p class="hero-profile-p">
-							I'm a front end web developer and designer based in Sacramento, CA. Here are some of my favorite technologies:
+					<!-- tech -->
+					<div class="flex-full flex-col port-project-tech">
+						<p class="port-project-tech-title">
+							Technologies used:
 						</p>
 
-						<div class="flex-full flex-row hero-technologies">
-							<div class="flex-full flex-col hero-single-technology">
-								<img alt="tech logo" src="./assets/images/icon_html.png">
-                                <div class="hero-image-tag">HTML 5</div>
+						<div class="flex-full flex-row port-project-tech-icon">
+							<div style="position: relative;">
+								<img class="icon-hover" alt="JavaScript ES6 tech icon" src="./assets/images/icon_js.png" width="25">
+								<p class="icon-hover-tag">JavaScript&nbsp;ES6</p>
 							</div>
-							<div class="flex-full flex-col hero-single-technology">
-								<img alt="tech logo" src="./assets/images/icon_css.png">
-                                <div class="hero-image-tag">CSS 3</div>
+							<div style="position: relative;">
+								<img class="icon-hover" alt="React tech icon" src="./assets/images/icon_react.png" width="25">
+								<p class="icon-hover-tag">React&nbsp;Native</p>
 							</div>
-							<div class="flex-full flex-col hero-single-technology">
-								<img alt="tech logo" src="./assets/images/icon_js.png">
-                                <div class="hero-image-tag">JS ES6</div>
+							<div style="position: relative;">
+								<img class="icon-hover" alt="Redux tech icon" src="./assets/images/icon_redux.png" width="25">
+								<p class="icon-hover-tag">Redux</p>
 							</div>
-							<div class="flex-full flex-col hero-single-technology">
-								<img alt="tech logo" src="./assets/images/icon_react.png">
-                                <div class="hero-image-tag">React</div>
+							<div style="position: relative;">
+								<img class="icon-hover" alt="Firebase tech icon" src="./assets/images/icon_firebase.png" width="25">
+								<p class="icon-hover-tag">Firebase</p>
 							</div>
-							<div class="flex-full flex-col hero-single-technology">
-								<img alt="tech logo" src="./assets/images/icon_redux.png">
-                                <div class="hero-image-tag">Redux</div>
+							<div style="position: relative;">
+								<img class="icon-hover" alt="Illustrator tech icon" src="./assets/images/icon_ai.png" width="25">
+								<p class="icon-hover-tag">Illustrator</p>
 							</div>
-							<div class="flex-full flex-col hero-single-technology">
-								<img alt="tech logo" src="./assets/images/icon_node.png">
-                                <div class="hero-image-tag">Node</div>
-							</div>
-							<div class="flex-full flex-col hero-single-technology">
-								<img alt="tech logo" src="./assets/images/icon_mysql.png">
-                                <div class="hero-image-tag">MySQL</div>
-							</div>
-							<!-- <div class="flex-full flex-col hero-single-technology">
-								<img alt="tech logo" src="./assets/images/icon_wordpress.png">
-                                <div class="hero-image-tag">WordPress</div>
-							</div> -->
-							<div class="flex-full flex-col hero-single-technology">
-								<img alt="tech logo" src="./assets/images/icon_ai.png">
-                                <div class="hero-image-tag">Illustrator</div>
-							</div>
-							<div class="flex-full flex-col hero-single-technology">
-								<img alt="tech logo" src="./assets/images/icon_aps.png">
-                                <div class="hero-image-tag">Photoshop</div>
-							</div>
-						</div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- SUPER HERO END -->
-
-
-        <!-- PORTFOLIO START -->
-        <section id="portfolio" class="flex-full flex-col portfolio-wrapper">
-            <div class="flex-full flex-col portfolio">
-				<h2 class="crete portfolio-tagline">Portfolio</h2>
-
-
-				<!-- single project start -->
-				<div class="flex-full flex-row port-project-container">
-
-					<!-- info -->
-					<div class="flex-full flex-col port-project-info">
-
-						<div class="port-project-line"></div>
-
-						<div class="port-project-image">
-							<a target="_blank" href="./assets/images/home-101-full.jpg"><img alt="project image" src="./assets/images/port_home101.png" width="100%"></a>
-						</div>
-
-						<!-- tech -->
-						<div class="flex-full flex-col port-project-tech">
-							<div class="port-project-tech-title crete">
-								Technologies used:
-							</div>
-
-							<div class="flex-full flex-row port-project-tech-icon">
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_html_css_js.png" width="25">
-									<div class="icon-hover-tag">HTML/CSS/JS</div>
-								</div>
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_magento.png" width="25">
-									<div class="icon-hover-tag">Magento</div>
-								</div>
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_ai.png" width="25">
-									<div class="icon-hover-tag">Illustrator</div>
-								</div>
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_aps.png" width="25">
-									<div class="icon-hover-tag">Photoshop</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-
-					<!-- description -->
-					<div class="flex-full flex-col port-project-text">
-						<a target="_blank" href="./assets/images/home-101-full.jpg"><div class="port-project-title crete">Home 101</div></a>
-						<div class="port-project-tags">5/2020</div>
-						<div class="port-project-description">
-							One of many ecommerce websites I built while working at AVB Marketing (9/2019 - 6/2020). Our members were primarily mom-and-pop appliance, mattress, and furniture outlets. Home 101 is a high-end appliance and fixtures outlet located in Rancho Cucamonga, CA. They wanted their website to reflect their high-end products and services.
-							<br><br>
-							I used HTML, CSS, JS, and Magento for page management. The store page is not yet live; <a target="_blank" href="./assets/images/home-101-full.jpg">click here to view a full page screenshot.</a>
 						</div>
 					</div>
 				</div>
-				<!-- single project end -->
+
+				<!-- description -->
+				<div class="flex-full flex-col port-project-text">
+					<p class="port-project-title">
+						<a target="_blank" href="https://gavinbaxter.com">MoodYear iOS App</a>
+					</p>
+
+					<!-- github -->
+					<a target="_blank" href="https://github.com/gavbax99/MoodYear" class="port-view-on-github">
+						GitHub <img alt="GitHub logo" src="./assets/images/logo_github-white.svg" style="display: inline; margin-left: 6px" width="16" />
+					</a>
+
+					<p class="port-project-tags">11/2020</p>
+					<p class="port-project-description">
+						MoodYear is a simple, beautiful mood tracking and journaling application published to the iOS App Store. Currently under Apple review.
+						<br><br>
+						Build with React Native and JS ES6; Redux implemented for state management. Firebase utilized for its authentication and database.
+					</p>
+				</div>
+			</div>
+			<!-- single project end -->
 
 
-				<!-- single project start -->
-				<div class="flex-full flex-row port-project-container">
+			<!-- single project start -->
+			<div class="flex-full flex-row port-project-container">
 
-					<!-- info -->
-					<div class="flex-full flex-col port-project-info">
+				<!-- info -->
+				<div class="flex-full flex-col port-project-info">
+					<div class="port-project-line"></div>
+					<a class="port-project-image" target="_blank" href="http://www.playaroundme.com">
+						<img alt="PlayAroundMe Calculator project image" src="./assets/images/port_pam.png" width="100%">
+					</a>
 
-						<div class="port-project-line"></div>
+					<!-- tech -->
+					<div class="flex-full flex-col port-project-tech">
+						<p class="port-project-tech-title">
+							Technologies used:
+						</p>
 
-						<div class="port-project-image">
-							<a target="_blank" href="https://www.avbevents.com/summit-2020/"><img alt="project image" src="./assets/images/port_summit.png" width="100%"></a>
-						</div>
-
-						<!-- tech -->
-						<div class="flex-full flex-col port-project-tech">
-							<div class="port-project-tech-title crete">
-								Technologies used:
+						<div class="flex-full flex-row port-project-tech-icon">
+							<div style="position: relative;">
+								<img class="icon-hover" alt="tech icon" src="./assets/images/icon_html_css_js.png" width="25">
+								<p class="icon-hover-tag">HTML/CSS/JS</p>
 							</div>
-
-							<div class="flex-full flex-row port-project-tech-icon">
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_html_css_js.png" width="25">
-									<div class="icon-hover-tag">HTML/CSS/JS</div>
-								</div>
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_wordpress.png" width="25">
-									<div class="icon-hover-tag">WordPress</div>
-								</div>
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_ai.png" width="25">
-									<div class="icon-hover-tag">Illustrator</div>
-								</div>
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_aps.png" width="25">
-									<div class="icon-hover-tag">Photoshop</div>
-								</div>
+							<div style="position: relative;">
+								<img class="icon-hover" alt="React tech icon" src="./assets/images/icon_react.png" width="25">
+								<p class="icon-hover-tag">React</p>
 							</div>
-
-						</div>
-					</div>
-
-					<!-- description -->
-					<div class="flex-full flex-col port-project-text">
-						<a target="_blank" href="https://www.avbevents.com/summit-2020/"><div class="port-project-title crete">Summit 2020</div></a>
-						<div class="port-project-tags">3/2020</div>
-						<div class="port-project-description">
-							AVB Marketing holds two large industry events each year, 'Summit' and 'Convention'. I was tasked with designing and building the Summit 2020 event page from the ground up. I worked closely with the event planners ensure all relevant information was captured.
-							<br><br>
-							I used HTML, CSS, JS, and WordPress for page management.
+							<div style="position: relative;">
+								<img class="icon-hover" alt="Redux tech icon" src="./assets/images/icon_redux.png" width="25">
+								<p class="icon-hover-tag">Redux</p>
+							</div>
+							<div style="position: relative;">
+								<img class="icon-hover" alt="Illustrator tech icon" src="./assets/images/icon_ai.png" width="25">
+								<p class="icon-hover-tag">Illustrator</p>
+							</div>
+							<div style="position: relative;">
+								<img class="icon-hover" alt="Scryfall API tech icon" src="./assets/images/icon_scryfall.png" width="25">
+								<p class="icon-hover-tag">Scryfall&nbsp;API</p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<!-- single project end -->
+
+				<!-- description -->
+				<div class="flex-full flex-col port-project-text">
+					<p class="port-project-title">
+						<a target="_blank" href="http://www.playaroundme.com">PlayAroundMe Calculator</a>
+					</p>
+
+					<!-- github -->
+					<a target="_blank" href="https://github.com/gavbax99/PlayAroundMe" class="port-view-on-github">
+						GitHub <img alt="GitHub logo" src="./assets/images/logo_github-white.svg" style="display: inline; margin-left: 6px" width="16" />
+					</a>
+					
+					<p class="port-project-tags">8/2020</p>
+					<p class="port-project-description">
+						PlayAroundMe Calculator is a tool used to better learn new Magic: the Gathering cards as you play in Limited format events. The application calculates all permutations of resources your opponent has available and returns a list of cards they could potentially have in-hand so that you may "play around" those cards.
+						<br><br>
+						Build with React and JS ES6; Redux implemented for state management. <a target="_blank" class="text-link" href="https://scryfall.com/docs/api">Scryfall API</a> utilized to populate new sets.
+					</p>
+				</div>
+			</div>
+			<!-- single project end -->
 
 
-				<!-- single project start -->
-				<div class="flex-full flex-row port-project-container">
+			<!-- single project start -->
+			<div class="flex-full flex-row port-project-container">
 
-					<!-- info -->
-					<div class="flex-full flex-col port-project-info">
+				<!-- info -->
+				<div class="flex-full flex-col port-project-info">
+					<div class="port-project-line"></div>
+					<a class="port-project-image" target="_blank" href="http://socksanta.org">
+						<img alt="Sock Santa project image" src="./assets/images/port_socksanta.png" width="100%">
+					</a>
 
-						<div class="port-project-line"></div>
+					<!-- tech -->
+					<div class="flex-full flex-col port-project-tech">
+						<p class="port-project-tech-title">
+							Technologies used:
+						</p>
 
-						<div class="port-project-image">
-							<a target="_blank" href="http://socksanta.org"><img alt="project image" src="./assets/images/port_socksanta.png" width="100%"></a>
-						</div>
-
-						<!-- tech -->
-						<div class="flex-full flex-col port-project-tech">
-							<div class="port-project-tech-title crete">
-								Technologies used:
+						<div class="flex-full flex-row port-project-tech-icon">
+							<div style="position: relative;">
+								<img class="icon-hover" alt="HTML/CSS/JS tech icon" src="./assets/images/icon_html_css_js.png" width="25">
+								<p class="icon-hover-tag">HTML/CSS/JS</p>
 							</div>
-
-							<div class="flex-full flex-row port-project-tech-icon">
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_html_css_js.png" width="25">
-									<div class="icon-hover-tag">HTML/CSS/JS</div>
-								</div>
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_cpanel.png" width="25">
-									<div class="icon-hover-tag">cPanel</div>
-								</div>
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_ai.png" width="25">
-									<div class="icon-hover-tag">Illustrator</div>
-								</div>
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_aps.png" width="25">
-									<div class="icon-hover-tag">Photoshop</div>
-								</div>
+							<div style="position: relative;">
+								<img class="icon-hover" alt="Illustrator tech icon" src="./assets/images/icon_ai.png" width="25">
+								<p class="icon-hover-tag">Illustrator</p>
 							</div>
-
-						</div>
-					</div>
-
-					<!-- description -->
-					<div class="flex-full flex-col port-project-text">
-						<a target="_blank" href="http://socksanta.org"><div class="port-project-title crete">Sock Santa</div></a>
-						<div class="port-project-tags">11/2019</div>
-						<div class="port-project-description">
-							In late 2019 I ran a sock drive to raise socks for the homeless community in Sacramento. With the help of many generous contributors I raised 224 new and like-new pairs of socks and handed them out to the homeless on Christmas day.
-							<br><br>
-							I used HTML, CSS, and JS to build the page and cPanel for hosting.
+							<div style="position: relative;">
+								<img class="icon-hover" alt="Photoshop tech icon" src="./assets/images/icon_aps.png" width="25">
+								<p class="icon-hover-tag">Photoshop</p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<!-- single project end -->
-				
-				
-				<!-- single project start -->
-                <div class="flex-full flex-row port-project-container">
 
-                    <!-- info -->
-                    <div class="flex-full flex-col port-project-info">
+				<!-- description -->
+				<div class="flex-full flex-col port-project-text">
+					<p class="port-project-title">
+						<a target="_blank" href="http://socksanta.org">Sock Santa</a>
+					</p>
 
-                        <div class="port-project-line"></div>
-
-                        <div class="port-project-image">
-                            <a target="_blank" href="http://bigbrothercomics.com">
-                                <img alt="project image" src="./assets/images/port_bb.png" width="100%">
-                            </a>
-                        </div>
-
-                        <!-- tech -->
-                        <div class="flex-full flex-col port-project-tech">
-                            <div class="port-project-tech-title crete">
-                                Technologies used:
-                            </div>
-
-                            <div class="flex-full flex-row port-project-tech-icon">
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_html_css_js.png" width="25">
-									<div class="icon-hover-tag">HTML/CSS/JS</div>
-								</div>
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_node.png" width="25">
-									<div class="icon-hover-tag">Node</div>
-								</div>
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_express.png" width="25">
-									<div class="icon-hover-tag">Express</div>
-								</div>
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_mysql.png" width="25">
-									<div class="icon-hover-tag">MySQL</div>
-								</div>
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_ai.png" width="25">
-									<div class="icon-hover-tag">Illustrator</div>
-								</div>
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_aps.png" width="25">
-									<div class="icon-hover-tag">Photoshop</div>
-								</div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- description -->
-                    <div class="flex-full flex-col port-project-text">
-                            <a target="_blank" href="https://bigbrothercomics.com/"><div class="port-project-title crete">Big Brother Comics</div></a>
-                            <div class="port-project-tags">5/2019</div>
-                        <div class="port-project-description">
-                            Kenny, the owner of Big Brother Comics, had grown beyond the bland and bloated website he had been previously using. He wanted a website that was cleaner, faster, more on-brand, and most importantly one that was responsive for mobile devices.
-                            <br><br>
-                            Kenny wanted the ability to post bulletins of upcoming events to his website. I implemented a simple and secure admin portal for him and his employees to write bulletins that would post to a MySQL database through Node and Express. Hosted and managed on cPanel.
-                        </div>
-                    </div>
-                </div>
-				<!-- single project end -->
-
-				
-				<!-- single project start -->
-				<div class="flex-full flex-row port-project-container">
-
-					<!-- info -->
-					<div class="flex-full flex-col port-project-info">
-
-						<div class="port-project-line"></div>
-
-						<div class="port-project-image">
-							<a target="_blank" href="./assets/images/epic-full.jpg"><img alt="project image" src="./assets/images/port_epic.png" width="100%"></a>
-						</div>
-
-						<!-- tech -->
-						<div class="flex-full flex-col port-project-tech">
-							<div class="port-project-tech-title crete">
-								Technologies used:
-							</div>
-
-							<div class="flex-full flex-row port-project-tech-icon">
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_html_css_js.png" width="25">
-									<div class="icon-hover-tag">HTML/CSS/JS</div>
-								</div>
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_wordpress.png" width="25">
-									<div class="icon-hover-tag">WordPress</div>
-								</div>
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_ai.png" width="25">
-									<div class="icon-hover-tag">Illustrator</div>
-								</div>
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_aps.png" width="25">
-									<div class="icon-hover-tag">Photoshop</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-
-					<!-- description -->
-					<div class="flex-full flex-col port-project-text">
-						<a target="_blank" href="./assets/images/epic-full.jpg"><div class="port-project-title crete">EPIC2019</div></a>
-						<div class="port-project-tags">3/2019</div>
-						<div class="port-project-description">
-							The Electric &amp; Gas Industries Association (EGIA) hosts a large annual conference in Las Vegas to bring together industry experts and their members for the "Ultimate Educational Experience for Contractors."
-							<br><br>
-							I used HTML, CSS, JS, and WordPress for page management. The event page is no longer live; <a target="_blank" href="./assets/images/epic-full.jpg">click here to view a full page screenshot.</a>
-						</div>
-					</div>
+					<p class="port-project-tags">11/2019</p>
+					<p class="port-project-description">
+						In winter 2019 I ran a sock drive to raise socks for the homeless community in Sacramento. With the help of many generous contributors I raised 224 new and like-new pairs of socks and handed them out to the homeless on Christmas day.
+						<br><br>
+						Built with plain ol' HTML, CSS, and JS.
+					</p>
 				</div>
-				<!-- single project end -->
-
-
-				<!-- single project start -->
-				<div class="flex-full flex-row port-project-container">
-
-					<!-- info -->
-					<div class="flex-full flex-col port-project-info">
-
-						<div class="port-project-line"></div>
-
-						<div class="port-project-image">
-							<a target="_blank" href="https://ultimate-luchador.herokuapp.com/"><img alt="project image" src="./assets/images/port_luchador.png" width="100%"></a>
-						</div>
-
-						<div class="flex-full flex-row port-project-mobile">
-							<img alt="mobile view" src="./assets/images/port_mobile_luch1.png" width="80">
-							<img alt="mobile view" src="./assets/images/port_mobile_luch2.png" width="80">
-							<img alt="mobile view" src="./assets/images/port_mobile_luch3.png" width="80">
-						</div>
-
-						<!-- tech -->
-						<div class="flex-full flex-col port-project-tech">
-							<div class="port-project-tech-title crete">
-								Technologies used:
-							</div>
-
-							<!-- <div class="flex-full flex-row port-project-tech-icon">
-								<img alt="tech icon" src="./assets/images/icon_html_css_js.png" width="25">
-								<img alt="tech icon" src="./assets/images/icon_mysql.png" width="25">
-								<img alt="tech icon" src="./assets/images/icon_express.png" width="25">
-								<img alt="tech icon" src="./assets/images/icon_react.png" width="25">
-								<img alt="tech icon" src="./assets/images/icon_node.png" width="25">
-								<img alt="tech icon" src="./assets/images/icon_firebsae.png" width="25">
-								<img alt="tech icon" src="./assets/images/icon_ai.png" width="25">
-							</div> -->
-
-							<div class="flex-full flex-row port-project-tech-icon">
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_html_css_js.png" width="25">
-									<div class="icon-hover-tag">HTML/CSS/JS</div>
-								</div>
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_react.png" width="25">
-									<div class="icon-hover-tag">React</div>
-								</div>
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_redux.png" width="25">
-									<div class="icon-hover-tag">Redux</div>
-								</div>
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_node.png" width="25">
-									<div class="icon-hover-tag">Node</div>
-								</div>
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_express.png" width="25">
-									<div class="icon-hover-tag">Express</div>
-								</div>
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_mysql.png" width="25">
-									<div class="icon-hover-tag">MySQL</div>
-								</div>
-								<div style="position: relative;">
-									<img class="icon-hover" alt="tech icon" src="./assets/images/icon_ai.png" width="25">
-									<div class="icon-hover-tag">Illustrator</div>
-								</div>
-                            </div>
-
-						</div>
-					</div>
-
-					<!-- description -->
-					<div class="flex-full flex-col port-project-text">
-						<a target="_blank" href="https://ultimate-luchador.herokuapp.com/"><div class="port-project-title crete">Ultimate Luchador</div></a>
-						<div class="port-project-tags">11/2018</div>
-						<div class="port-project-description">
-							A React browser game with mobile playability in mind. I was the lead graphic designer, game designer, and developer for this project, personally committing nearly <a target="_blank" href="https://github.com/gavbax99/ultimate-luchador/graphs/contributors"><span style="text-decoration: underline;">80,000 lines of code</span></a> over the course of four weeks.
-							<br><br>
-							Ultimate Luchador is a text-based, player-vs-player RPG game. You begin your journey as a rookie with the hopes of raising your Fame level to become the Ultimate Luchador. You have three abilities that change and get more powerful as you level up your Luchador by fighting against other players with a similar Fame level.
-							<br><br>
-							Ultimate Luchador is built on a SERN stack - MySQL, Express, React, and Node. We utilized Redux for easier access to our game data.
-						</div>
-					</div>
-				</div>
-				<!-- single project end -->
+			</div>
+			<!-- single project end -->
 			
+			
+			<!-- single project start -->
+			<div class="flex-full flex-row port-project-container">
 
-            </div>
-        </section>
-        <!-- PORTFOLIO END -->
+				<!-- info -->
+				<div class="flex-full flex-col port-project-info">
+					<div class="port-project-line"></div>
+					<a class="port-project-image" target="_blank" href="http://bigbrothercomics.com">
+						<img alt="Big Brother Comics project image" src="./assets/images/port_bb.png" width="100%">
+					</a>
+
+					<!-- tech -->
+					<div class="flex-full flex-col port-project-tech">
+						<p class="port-project-tech-title">
+							Technologies used:
+						</p>
+
+						<div class="flex-full flex-row port-project-tech-icon">
+							<div style="position: relative;">
+								<img class="icon-hover" alt="HTML/CSS/JS tech icon" src="./assets/images/icon_html_css_js.png" width="25">
+								<p class="icon-hover-tag">HTML/CSS/JS</p>
+							</div>
+							<div style="position: relative;">
+								<img class="icon-hover" alt="Node tech icon" src="./assets/images/icon_node.png" width="25">
+								<p class="icon-hover-tag">Node</p>
+							</div>
+							<div style="position: relative;">
+								<img class="icon-hover" alt="MySQL tech icon" src="./assets/images/icon_mysql.png" width="25">
+								<p class="icon-hover-tag">MySQL</p>
+							</div>
+							<div style="position: relative;">
+								<img class="icon-hover" alt="Illustrator tech icon" src="./assets/images/icon_ai.png" width="25">
+								<p class="icon-hover-tag">Illustrator</p>
+							</div>
+							<div style="position: relative;">
+								<img class="icon-hover" alt="Photoshop tech icon" src="./assets/images/icon_aps.png" width="25">
+								<p class="icon-hover-tag">Photoshop</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- description -->
+				<div class="flex-full flex-col port-project-text">
+					<p class="port-project-title">
+						<a target="_blank" href="https://bigbrothercomics.com/">Big Brother Comics</a>
+					</p>
+
+					<p class="port-project-tags">5/2019</p>
+					<p class="port-project-description">
+						Kenny, the owner of Big Brother Comics, had grown beyond the bland and bloated website he had been previously using. He wanted a website that was cleaner, faster, more on-brand, and most importantly one that was responsive for mobile devices. Kenny also wanted a bulletin board that his emploeeys could update &ndash; I implemented a simple and secure admin portal for his employees to write bulletins that would post to a MySQL database through Node and Express.
+						<br><br>
+						Built with HTML, CSS, JS, Node, and MySQL for bulletin entries.
+					</p>
+				</div>
+			</div>
+			<!-- single project end -->
+
+			
+			<!-- single project start -->
+			<div class="flex-full flex-row port-project-container">
+
+				<!-- info -->
+				<div class="flex-full flex-col port-project-info">
+					<div class="port-project-line"></div>
+					<a class="port-project-image" target="_blank" href="./assets/images/epic-full.jpg">
+						<img alt="Epic2019 project image" src="./assets/images/port_epic.png" width="100%">
+					</a>
+
+					<!-- tech -->
+					<div class="flex-full flex-col port-project-tech">
+						<p class="port-project-tech-title">
+							Technologies used:
+						</p>
+
+						<div class="flex-full flex-row port-project-tech-icon">
+							<div style="position: relative;">
+								<img class="icon-hover" alt="HTML/CSS/JS tech icon" src="./assets/images/icon_html_css_js.png" width="25">
+								<p class="icon-hover-tag">HTML/CSS/JS</p>
+							</div>
+							<div style="position: relative;">
+								<img class="icon-hover" alt="WordPresstech icon" src="./assets/images/icon_wordpress.png" width="25">
+								<p class="icon-hover-tag">WordPress</p>
+							</div>
+							<div style="position: relative;">
+								<img class="icon-hover" alt="Illustrator tech icon" src="./assets/images/icon_ai.png" width="25">
+								<p class="icon-hover-tag">Illustrator</p>
+							</div>
+							<div style="position: relative;">
+								<img class="icon-hover" alt="Photoshop tech icon" src="./assets/images/icon_aps.png" width="25">
+								<p class="icon-hover-tag">Photoshop</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- description -->
+				<div class="flex-full flex-col port-project-text">
+					<p class="port-project-title">
+						<a target="_blank" href="./assets/images/epic-full.jpg">EPIC2019</a>
+					</p>
+
+					<p class="port-project-tags">3/2019</p>
+					<p class="port-project-description">
+						The Electric &amp; Gas Industries Association (EGIA) hosts a large annual conference in Las Vegas to bring together industry experts and their members for the "Ultimate Educational Experience for Contractors."
+						<br><br>
+						Built with HTML, CSS, JS, and WordPress for page management. The event page is no longer live; <a target="_blank" class="text-link" href="./assets/images/epic-full.jpg">click here to view a full page screenshot.</a>
+					</p>
+				</div>
+			</div>
+			<!-- single project end -->
 
 
-        <!-- FOOTER START -->
-        <footer id="connect" class="flex-full flex-col footer-class">
+			<!-- single project start -->
+			<div class="flex-full flex-row port-project-container">
 
-            <div class="flex-full flex-col footer-connect">
-                <h2 class="footer-connect-tagline crete">
-                    Let's connect
-                </h2>
-                <div class="footer-connect-text">
-                    I'm interested in web development and growing your brand. Reach out to me on any of the platforms&nbsp;below.
-                </div>
-                <div class="footer-connect-email">
-                    <a href="mailto:hello@gavinbaxter.com"><img alt="mail icon" src="./assets/images/icon_mail.svg" width="28" style="padding-right: 10px; display: inline;">hello<i class="fas fa-at"></i>gavinbaxter.com</a>
-                </div>
-            </div>
+				<!-- info -->
+				<div class="flex-full flex-col port-project-info">
+					<div class="port-project-line"></div>
+					<a class="flex-full flex-row port-project-mobile" target="_blank" href="./assets/images/epic-full.jpg">
+						<img alt="Ultimate Luchador mobile view 1" src="./assets/images/port_mobile-luchador-1.png">
+						<img alt="Ultimate Luchador mobile view 2" src="./assets/images/port_mobile-luchador-2.png">
+						<img alt="Ultimate Luchador mobile view 3" src="./assets/images/port_mobile-luchador-3.png">
+					</a>
 
-            <div class="flex-full flex-row footer-icons">
+					<!-- tech -->
+					<div class="flex-full flex-col port-project-tech">
+						<p class="port-project-tech-title">
+							Technologies used:
+						</p>
 
-                 <div class="footer-icon-container">
-                    <a target="_blank" href="https://www.linkedin.com/in/gavinbaxter99/">
-                        <img class="footer-contact-icon" alt="Linkedin logo" src="./assets/images/icon_linkedin.svg">
-                    </a>
-                </div>
+						<div class="flex-full flex-row port-project-tech-icon">
+							<div style="position: relative;">
+								<img class="icon-hover" alt="HTML/CSS/JS tech icon" src="./assets/images/icon_html_css_js.png" width="25">
+								<p class="icon-hover-tag">HTML/CSS/JS</p>
+							</div>
+							<div style="position: relative;">
+								<img class="icon-hover" alt="React tech icon" src="./assets/images/icon_react.png" width="25">
+								<p class="icon-hover-tag">React</p>
+							</div>
+							<div style="position: relative;">
+								<img class="icon-hover" alt="Redux tech icon" src="./assets/images/icon_redux.png" width="25">
+								<p class="icon-hover-tag">Redux</p>
+							</div>
+							<div style="position: relative;">
+								<img class="icon-hover" alt="Node tech icon" src="./assets/images/icon_node.png" width="25">
+								<p class="icon-hover-tag">Node</p>
+							</div>
+							<div style="position: relative;">
+								<img class="icon-hover" alt="MySQLtech icon" src="./assets/images/icon_mysql.png" width="25">
+								<p class="icon-hover-tag">MySQL</p>
+							</div>
+							<div style="position: relative;">
+								<img class="icon-hover" alt="Firebase tech icon" src="./assets/images/icon_firebase.png" width="25">
+								<p class="icon-hover-tag">Firebase</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
-                 <!-- <div class="footer-icon-container">
-                    <a target="_blank" href="https://github.com/gavbax99">
-                        <img class="footer-contact-icon" alt="GitHub logo" src="./assets/images/icon_gh.svg">
-                    </a>
-                </div> -->
+				<!-- description -->
+				<div class="flex-full flex-col port-project-text">
+					<p class="port-project-title">
+						<a target="_blank" href="https://ultimate-luchador.herokuapp.com/">Ultimate Luchador</a>
+					</p>
 
-                 <!-- <div class="footer-icon-container">
-                    <a target="_blank" href="https://www.facebook.com/gavinbaxter916">
-                        <img class="footer-contact-icon" alt="Facebook logo" src="./assets/images/icon_fb.svg">
-                    </a>
-                </div> -->
-
-                 <!-- <div class="footer-icon-container">
-                    <a target="_blank" href="./assets/docs/baxter-resume.pdf">
-                        <img class="footer-contact-icon" alt="CV logo" src="./assets/images/icon_cv.svg">
-                    </a>
-                </div> -->
-
-            </div>
-
-            <div class="flex-full flex-row footer-bottom">
-                Gavin Baxter ©&nbsp;2020
-            </div>
-
-        </footer>
-        <!-- FOOTER END -->
+					<p class="port-project-tags">11/2018</p>
+					<p class="port-project-description">
+						A React browser game with mobile playability in mind. I was the lead graphic designer, game designer, and developer for this project. Ultimate Luchador is a text-based, player-vs-player RPG. You begin your journey as a rookie and raise your Fame level to become the Ultimate Luchador.
+						<br><br>
+						Built on a SERN stack &ndash; MySQL, Express, React, and Node. We utilized Redux for easier access to our game data. Firebase utilized for authentication.
+					</p>
+				</div>
+			</div>
+			<!-- single project end -->
+		
+		</div>
+	</section>
+	<!-- PORTFOLIO END -->
 
 
-    </div>
+	<!-- FOOTER START -->
+	<footer id="connect" class="flex-full flex-col footer-class">
+
+		<!-- Connect color text -->
+		<div class="flex-full flex-col footer-connect">
+			<h2 class="footer-connect-tagline crete">
+				Let's connect
+			</h2>
+			<p class="footer-connect-text">
+				I'm interested in web development and growing your brand. Reach out to me on any of the platforms&nbsp;below.
+			</p>
+			<p class="footer-connect-email">
+				<a href="mailto:hello@gavinbaxter.com">
+					<img alt="email icon" src="./assets/images/icon_mail.svg" width="28" style="padding-right: 10px; display: inline;">hello@gavinbaxter.com
+				</a>
+			</p>
+		</div>
+
+		<!-- Contact icons -->
+		<div class="flex-full flex-row footer-icons">
+				<div class="footer-icon-container">
+				<a target="_blank" href="https://www.linkedin.com/in/gavinbaxter99/">
+					<img class="footer-contact-icon" alt="Linkedin logo" src="./assets/images/icon_linkedin.svg">
+				</a>
+			</div>
+				<div class="footer-icon-container">
+				<a target="_blank" href="https://github.com/gavbax99">
+					<img class="footer-contact-icon" alt="GitHub logo" src="./assets/images/icon_gh.svg">
+				</a>
+			</div>
+				<!-- <div class="footer-icon-container">
+				<a target="_blank" href="./assets/docs/baxter-resume.pdf">
+					<img class="footer-contact-icon" alt="CV logo" src="./assets/images/icon_cv.svg">
+				</a>
+			</div> -->
+		</div>
+
+		<!-- Copyright -->
+		<p class="flex-full flex-row footer-bottom">
+			Gavin Baxter ©&nbsp;2020
+		</p>
+
+	</footer>
+	<!-- FOOTER END -->
+
 
     <!-- Javascript links -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/dot.js"></script>
-
+	<script src="./assets/js/dot.js"></script>
+	
 </body>
-
 </html>

@@ -25,4 +25,7 @@ $(document).ready(function(){
 // Preloader fade
 $(window).on("load", function() {
 
+	$(".load-cover").css("background-color", "transparent");
+	setTimeout(() => { $(".load-cover").remove() }, 1000)
+
 });
