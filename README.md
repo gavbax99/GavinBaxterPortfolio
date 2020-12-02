@@ -1,8 +1,6 @@
 ## Gavin Baxter
 
-#### Looking for work!
-
-Front End Developer + Web Designer
+#### Front End Developer + Web Designer looking for work!
 
 Portfolio: www.gavinbaxter.com
 
