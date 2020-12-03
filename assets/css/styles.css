@@ -236,7 +236,9 @@ body {
 .hero-top {
     height: 100vh;
     max-width: 1050px;
-    width: 100%;
+	width: 100%;
+	
+	min-height: 460px;
 }
 
 .hero-name {
@@ -284,7 +286,9 @@ body {
 .hero-bot {
     height: 100vh;
     max-width: 1050px;
-    width: 100%;
+	width: 100%;
+	
+	min-height: 600px;
 }
 
 .hero-profile {
@@ -485,8 +489,8 @@ canvas {
 	justify-content: center;
 	padding: 8px 12px;
 	margin-bottom: 12px;
-	background-color: rgb(24, 24, 24);
-	color: #fff;
+	background-color: rgb(24, 24, 24) !important;
+	color: #fff !important;
 	border-radius: 0 50px 50px 0;
 	font-weight: 600;
 	font-size: 14px;
@@ -767,7 +771,7 @@ canvas {
     }
 
     .portfolio-wrapper {
-        padding: 60px 30px 70px;
+        padding: 60px 30px;
     }
 
     .portfolio-tagline {
@@ -882,8 +886,3 @@ canvas {
 		padding: 0 18px;
 	}
 }
-
-
-
-
-

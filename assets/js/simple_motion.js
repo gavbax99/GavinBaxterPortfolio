@@ -1,6 +1,6 @@
 // constants
 const animInterval = 100;
-const revealPosition = 0.75;
+const revealPosition = 0.85;
 
 
 // setup anim array
