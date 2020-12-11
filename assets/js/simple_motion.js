@@ -21,7 +21,7 @@ animElementArr.forEach(ele => {
     ele.style.transitionTimingFunction = eastType ? `${eastType}` : "ease-in";
     ele.style.opacity= startingOpacity ? `${startingOpacity}` : "0";
     ele.style.transform = distanceToTravel ? `translate(0, ${distanceToTravel})` : "translate(0, 40px)";
-    ele.style.transition = transitionTime ? `transform ${transitionTime}` : "transform 1000ms";
+    ele.style.transition = transitionTime ? `transform ${transitionTime}` : "transform 500ms";
     // ele.style.
 });
 

@@ -230,7 +230,8 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 0 120px;
-    overflow-x: hidden;
+	overflow-x: hidden;
+	min-height: 1070px;
 }
 
 .hero-top {
